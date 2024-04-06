@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("primevue/resources/themes/aura-light-green/theme.css");
+@import url("primeicons/primeicons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slide-up-enter-active, .slide-up-leave-active {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Bejövő animáció esetén a kezdeti állapot, ahol az elem láthatatlan és alulról jön be */
+.slide-up-enter-from {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* Az elem kezdeti pozíciója a bejövő animáció végén */
+.slide-up-enter-to {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Kilépő animáció esetén az elem kezdeti állapota, ahol az elem látható és a kilépés előtt áll */
+.slide-up-leave-from {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Kilépő animáció esetén a végső állapot, ahol az elem jobbra mozdul el és válik láthatatlanná */
+.slide-up-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.slider-track{
+    animation: scroll 30s linear infinite;
+}
+
+.slider-track-slower{
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+    height: 0;
+}
+.fade-enter-to, .fade-leave-from {
+    opacity: 1;
+    height: 100%;
+}
+
+.list-enter-active{
+    transition: all 0.5s ease;
+}
+.list-leave-active {
+    transition: all 0.2s ease;
+}
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+    height: 0;
+}
+.fade-enter-to, .fade-leave-from {
+    opacity: 1;
+    height: 100%;
+}
+
+.list-enter-active{
+    transition: all 0.5s ease;
+}
+.list-leave-active {
+    transition: all 0.2s ease;
+}
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+}
