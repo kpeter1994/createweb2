@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import url("primevue/resources/themes/aura-light-green/theme.css");
 @import url("primeicons/primeicons.css");
 
@@ -94,3 +97,49 @@
     opacity: 0;
     transform: translateY(100px);
 }
+
+.slide-fade-enter-active {
+    animation: slide-fade .4s ease-out;
+}
+.slide-fade-leave-active {
+    animation: slide-fade .4s reverse;
+}
+@keyframes slide-fade {
+    from {
+        transform: translateY(60px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.content h2 {
+    @apply font-serif text-2xl mb-4 mt-12;
+}
+.content h3 {
+    @apply font-serif text-xl mb-4 mt-12;
+}
+.content img {
+    @apply w-full mb-8 rounded-[2rem];
+}
+.content p {
+    @apply mb-3;
+}
+.content p:first-of-type {
+    @apply text-xl mb-3;
+}
+
+.content ul{
+    @apply list-disc list-inside space-y-1 ml-3 mt-1.5 mb-3;
+}
+
+.content blockquote {
+    @apply border-l-8 pl-6 my-12 text-2xl;
+}
+
+.content a {
+    @apply text-blue-500 underline;
+}
+

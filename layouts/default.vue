@@ -3,9 +3,7 @@
 
 <template>
   <div class="bg-black pt-3">
-      <main>
         <slot />
-      </main>
 
   </div>
 

@@ -4,19 +4,20 @@ import Chart from "primevue/chart";
 const chartData = {
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   datasets: [
-    {
-      label: 'A konkurensed',
-      data: [60, 45, 50, 40, 30, 20, 50, 30, 20, 40, 60, 70],
-      fill: false,
-      borderColor: 'rgb(141,141,141)',
-      tension: 0.2
-    },
+    // {
+    //   label: 'A konkurensed',
+    //   data: [60, 45, 50, 40, 30, 20, 50, 30, 20, 40, 60, 70],
+    //   fill: false,
+    //   borderColor: 'rgb(141,141,141)',
+    //   tension: 0.2
+    // },
     {
       label: 'A te vállakozásod',
-      data: [35, 40, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130],
-      fill: false,
-      borderColor: 'rgb(196,244,73)',
-      tension: 0.2
+      data: [306, 295, 282, 266, 245, 216, 120, 50, 130, 195, 390, 585,],
+      fill: true,
+      borderColor: 'rgb(16,185,129)',
+      tension: 0.2,
+      backgroundColor: 'rgba(17,186,130,0.2)'
     }
   ]
 }

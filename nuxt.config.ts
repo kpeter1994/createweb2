@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image", "nuxt-primevue"],
+  modules: ["@nuxt/image", "nuxt-primevue", "@nuxt/content"],
   primevue: {
     components: {
       include: ['Multiselect', 'Accordion', 'AccordionTab']
@@ -19,6 +19,11 @@ export default defineNuxtConfig({
   image: {
     format: ['webp'],
     dir: 'public/image',
+  },
+  content: {
+    markdown: {
+      anchorLinks: false
+    },
   },
   target: 'static'
 })

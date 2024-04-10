@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       fontFamily:{
         sans: ["Poppins", "sans-serif"],
-        serif: ["IBM Plex Mono", "serif"],
+        // serif: ["IBM Plex Mono", "serif"],
+        serif: ["Playfair Display", "serif"],
       },
       colors:{
         green:{
@@ -32,6 +33,7 @@ module.exports = {
         "grid2": "url('/assets/image/grid2.svg')",
         "grid3": "url('/assets/image/grid3.svg')",
         "grid4": "url('/assets/image/grid4.svg')",
+        "brush": "url('/assets/image/brush.svg')",
       },
 
     },
