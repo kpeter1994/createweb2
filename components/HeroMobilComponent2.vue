@@ -1,4 +1,26 @@
 <script lang="ts" setup>
+import Chart from "primevue/chart";
+
+const chartData = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  datasets: [
+    // {
+    //   label: 'A konkurensed',
+    //   data: [60, 45, 50, 40, 30, 20, 50, 30, 20, 40, 60, 70],
+    //   fill: false,
+    //   borderColor: 'rgb(141,141,141)',
+    //   tension: 0.2
+    // },
+    {
+      label: 'A te vállakozásod',
+      data: [306, 295, 282, 266, 245, 216, 120, 50, 130, 195, 390, 585,],
+      fill: true,
+      borderColor: 'rgb(252,211,77)',
+      tension: 0.2,
+      backgroundColor: 'rgba(252,212,78,0.5)'
+    }
+  ]
+}
 
 const Time = () => {
   const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
@@ -19,14 +41,9 @@ const Time = () => {
             <img src="/image/mobil/Battery.svg" alt="töltötség">
           </div>
         </div>
-        <div class="mt-20 bg-white shadow pt-40 rounded-t-[1rem] bg-hero-m flex pb-20">
-          <div>
-            <p class="text-center text-3xl font-bold">Mi kell egy sikeres weboldalhoz?</p>
-            <p class="text-center mt-4">Kérj egy ingyenes weboldal elemzést</p>
-            <div class="flex justify-center mt-6">
-              <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
-            </div>
-          </div>
+        <div class="mt-20 bg-white shadow pt-10 rounded-t-[1rem]">
+          <span class="block text-center font-semibold text-gray-600">Az oldalad eredményei</span>
+          <Chart class="mt-6 w-full h-[400px]" type="line" :data="chartData"  />
         </div>
         <NotificationComponent />
 

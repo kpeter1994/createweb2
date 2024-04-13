@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['webp'],
-    dir: 'public/image',
+    dir: 'public',
   },
   content: {
     markdown: {

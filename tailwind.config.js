@@ -33,7 +33,10 @@ module.exports = {
         "grid2": "url('/assets/image/grid2.svg')",
         "grid3": "url('/assets/image/grid3.svg')",
         "grid4": "url('/assets/image/grid4.svg')",
+        "hero": "url('/assets/image/mi-kell.svg')",
+        "hero-m": "url('/assets/image/mi-kell-m.svg')",
         "brush": "url('/assets/image/brush.svg')",
+        "galaxy": "url('/public/image/galaxy.jpg')",
       },
 
     },

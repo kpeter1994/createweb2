@@ -1,4 +1,26 @@
 <script lang="ts" setup>
+
+useHead({
+  title: 'Céges Weboldal készítés | Createweb',
+  htmlAttrs: {
+    lang: 'hu',
+  },
+  meta: [
+    {
+      name: "description",
+      content: 'Ha nem szeretnéd magad a szerencsére bízni, a akkor neked is egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne kockáztass! Kérj ajánlatot!',
+    },
+    {
+      name: "charset",
+      content: "UTF-8",
+    }
+  ],
+  link: [
+    // { rel: 'icon', type: 'image/ico', href: '/favicon.ico' },
+    // { rel: 'apple-touch-icon', sizes: '32x32', href: '/apple-touch-icon.svg' },
+  ]
+});
+
 </script>
 
 <template>
@@ -7,26 +29,29 @@
       <section id="hero" class="bg-white bg-grid bg-contain lg:bg-cover overflow-hidden rounded-t-[2rem]">
         <div class="bg-gradient-to-l from-transparent to-white">
           <NavComponent/>
-          <div>
-            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row px-3 pt-12 lg:pt-20">
-              <div class="lg:w-6/12 flex flex-col gap-3 ">
-                <span class="text-center text-4xl font-serif lg:text-left md:text-5xl lg:text-6xl font-extrabold">Kiszámítható növekedés, minden helyzetben</span>
-                <h1 class="text-center lg:text-left text-lg">Ha nem szeretnéd magad a szerencsére bízni, a akkor neked
+
+
+          <div class="max-w-7xl 2xl:max-w-[95%] mx-auto flex flex-col lg:flex-row px-3 pt-6 lg:pt-20">
+
+            <div class="lg:w-6/12 xl:1/3 ">
+              <div class="max-w-xl mx-auto flex flex-col gap-3 lg:pb-12">
+                <span class="text-center text-4xl lg:text-5xl font-serif lg:text-left md:text-5xl xl:text-6xl font-extrabold">Ne engedd, hogy a webodalad a nővekedésed útjába áljon</span>
+                <h1 class="text-center lg:text-left xl:text-lg">Ha nem szeretnéd magad a szerencsére bízni, a akkor neked
                   is
                   egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne
                   kockáztass! Kérj ajánlatot!</h1>
                 <div class="flex justify-center lg:justify-start">
-                  <NuxtLink to="/"
-                            class="bg-black text-white px-4 py-2.5 rounded-full inline-flex hover:text-gray-100 text-sm font-semibold">
-                    Ajánlatot kérek
-                  </NuxtLink>
+                  <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
                 </div>
               </div>
-              <div class="lg:w-6/12 p-6 lg:p-0 ">
-                <HeroMobilComponent/>
-              </div>
             </div>
+            <div class="lg:w-6/12 xl:2/3 px-6 pt-6 lg:p-0 ">
+              <HeroMobilComponent class="lg:hidden"></HeroMobilComponent>
+              <HeroLaptopComponent class="hidden lg:block"></HeroLaptopComponent>
+            </div>
+
           </div>
+
         </div>
 
       </section>
@@ -111,7 +136,8 @@
 
       <section id="quote" class="bg-white bg-grid2 bg-cover bg-center py-40 px-3">
         <div class="max-w-4xl mx-auto">
-          <p class="font-serif font-semibold  text-3xl lg:text-4xl text-neutral-800">Az őrültség nem más, mint ugyanazt tenni újra és újra, és várni, hogy az eredmény más legyen.</p>
+          <p class="font-serif font-semibold  text-3xl lg:text-4xl text-neutral-800">Az őrültség nem más, mint ugyanazt
+            tenni újra és újra, és várni, hogy az eredmény más legyen.</p>
           <div class="flex justify-end ">
             <div class="flex flex-col items-center">
               <img class="w-14" src="/image/rita-mae-brown.png" alt="Rita Mae Brown">
@@ -135,9 +161,8 @@
       <section id="references" class="bg-neutral-100 bg-center">
         <div class="flex flex-col lg:flex-row relative">
           <div class="lg:w-1/2 order-2 lg:order-1">
-            <!--        <nuxt-img src="references.png" format="webp" sizes="xs:480px sm:768px md:1024px lg:860px xl:960px" class="w-full h-full object-cover"></nuxt-img>-->
-            <!--        todo cserélni az image-t-->
-            <img src="/image/references.png" alt="references" class="w-full h-full object-cover">
+            <NuxtImg src="/image/references.png" sizes="xs:480px sm:768px md:1024px lg:860px xl:960px" alt="references"
+                     class="w-full h-full object-cover"></NuxtImg>
           </div>
           <div
               class="w-full py-32 lg:absolute lg:w-2/3 h-full right-0 top-0 bottom-0  order-1 lg:order-2 flex items-center bg-brush bg-cover bg-center lg:bg-left bg-no-repeat">

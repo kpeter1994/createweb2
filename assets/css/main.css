@@ -140,6 +140,17 @@
 }
 
 .content a {
-    @apply text-blue-500 underline;
+    @apply underline;
 }
 
+.content a:hover {
+    @apply bg-amber-300 transition-all duration-300
+}
+
+.content .cta-btn{
+    @apply  no-underline transition-all duration-300;
+}
+
+.content .cta-btn:hover{
+    @apply bg-amber-300
+}

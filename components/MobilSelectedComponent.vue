@@ -67,9 +67,9 @@ const questionContent = [
         <div class="inline-flex gap-6 relative">
           <div class="h-[1px] w-full absolute top-[50%] bottom-[50%] right-0 left-0 bg-neutral-950/5"></div>
 
-          <span @click="select(0)" :class="selectedQuestion === 0 ? 'bg-green-500 ' : 'bg-white' " class="inline-flex relative cursor-pointer  w-8 h-8 justify-center items-center rounded-full ring-1 ring-neutral-950/5">1</span>
-          <span @click="select(1)" :class="selectedQuestion === 1 ? 'bg-green-500 ' : 'bg-white' " class="inline-flex relative cursor-pointer  w-8 h-8 justify-center items-center rounded-full ring-1 ring-neutral-950/5">2</span>
-          <span @click="select(2)" :class="selectedQuestion === 2 ? 'bg-green-500 ' : 'bg-white' " class="inline-flex relative cursor-pointer  w-8 h-8 justify-center items-center rounded-full ring-1 ring-neutral-950/5">3</span>
+          <span @click="select(0)" :class="selectedQuestion === 0 ? 'bg-amber-300 ' : 'bg-white' " class="inline-flex relative cursor-pointer  w-8 h-8 justify-center items-center rounded-full ring-1 ring-neutral-950/5">1</span>
+          <span @click="select(1)" :class="selectedQuestion === 1 ? 'bg-amber-300 ' : 'bg-white' " class="inline-flex relative cursor-pointer  w-8 h-8 justify-center items-center rounded-full ring-1 ring-neutral-950/5">2</span>
+          <span @click="select(2)" :class="selectedQuestion === 2 ? 'bg-amber-300 ' : 'bg-white' " class="inline-flex relative cursor-pointer  w-8 h-8 justify-center items-center rounded-full ring-1 ring-neutral-950/5">3</span>
         </div>
 
       </div>

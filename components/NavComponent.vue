@@ -6,7 +6,7 @@
   <header class="py-12 px-3">
     <div class="max-w-7xl mx-auto flex justify-between">
       <NuxtLink to="/" class="flex gap-1.5 items-center">
-        <img src="../assets/image/logo.svg" alt="">
+        <img width="35px" src="../assets/image/logo.svg" alt="">
         <span class="font-semibold text-lg">Create Web</span>
       </NuxtLink>
       <nav class="gap-3 items-center hidden lg:flex">

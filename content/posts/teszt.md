@@ -4,8 +4,8 @@ date: 2020-07-01
 draft: false
 tags: ["hello", "world"]
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ducimus esse ipsam itaque quo! Animi aperiam et ipsum magni quidem."
-thumbnail: "image/blog/blog-kep.jpg"
-slug: "hello-world"
+thumbnail: "image/blog/seo-ugynokseg.png"
+slug: "teszt"
 ---
 
 ## Első alcím
@@ -18,7 +18,7 @@ nihil nostrum quis reiciendis soluta ut vero. Id, possimus ut.
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur cum cupiditate dolorum error
 
 ::img
-![Hello World](/image/blog/blog-kep.jpg)
+![Hello World](/image/blog/seo-ugynokseg.png)
 ::
 
 

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import Article from "~/pages/Article.vue";
+import Article from "~/pages/article.vue";
 
 const {slug} = useRoute().params
 
@@ -20,12 +20,33 @@ onMounted(() => {
       const tocLink = document.createElement('a');
       tocLink.href = `#${id}`;
       tocLink.textContent = header.textContent;
-      tocLink.className = header.tagName.toLowerCase() === 'h2' ? 'font-bold block text-blue-500 underline' : 'ml-4 block text-blue-500';
+      tocLink.className = header.tagName.toLowerCase() === 'h2' ? 'font-bold block bg-opacity-50 underline p-1' : 'ml-4 block ';
 
       tocItem.appendChild(tocLink);
       tocList.appendChild(tocItem);
     });
   }
+});
+
+useHead({
+  title: 'Céges Weboldal készítés | Createweb',
+  htmlAttrs: {
+    lang: 'hu',
+  },
+  meta: [
+    {
+      name: "description",
+      content: 'Ha nem szeretnéd magad a szerencsére bízni, a akkor neked is egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne kockáztass! Kérj ajánlatot!',
+    },
+    {
+      name: "charset",
+      content: "UTF-8",
+    }
+  ],
+  link: [
+    // { rel: 'icon', type: 'image/ico', href: '/favicon.ico' },
+    // { rel: 'apple-touch-icon', sizes: '32x32', href: '/apple-touch-icon.svg' },
+  ]
 });
 </script>
 
@@ -61,7 +82,7 @@ onMounted(() => {
               </div>
               <div class="hidden xl:block xl:w-3/12 ">
                 <div>
-                  <img class="w-[70px]" src="/image/profil2.png" alt="">
+                  <NuxtImg src="image/profil2.png" sizes="sm: width: 70px" alt="Kovács Péter" class="object-cover"/>
                   <span class="font-serif text-center text-sm">Kovács Péter</span>
                   <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem dolorem
                     id

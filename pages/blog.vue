@@ -1,4 +1,25 @@
 <script lang="ts" setup>
+
+useHead({
+  title: 'Céges Weboldal készítés | Createweb',
+  htmlAttrs: {
+    lang: 'hu',
+  },
+  meta: [
+    {
+      name: "description",
+      content: 'Ha nem szeretnéd magad a szerencsére bízni, a akkor neked is egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne kockáztass! Kérj ajánlatot!',
+    },
+    {
+      name: "charset",
+      content: "UTF-8",
+    }
+  ],
+  link: [
+    // { rel: 'icon', type: 'image/ico', href: '/favicon.ico' },
+    // { rel: 'apple-touch-icon', sizes: '32x32', href: '/apple-touch-icon.svg' },
+  ]
+});
 </script>
 
 <template>
