@@ -105,4 +105,51 @@ useHead({
 
 </template>
 
-<style scoped></style>
+<style>
+
+.content h2 {
+  @apply font-serif text-2xl mb-4 mt-12;
+}
+.content h3 {
+  @apply font-serif text-xl mb-4 mt-12;
+}
+.content img {
+  @apply w-full mb-8 rounded-[2rem];
+}
+.content p {
+  @apply mb-3;
+}
+.content p:first-of-type {
+  @apply text-xl mb-3;
+}
+
+.content ul{
+  @apply list-disc list-inside space-y-1.5 ml-6 mt-1.5 mb-3;
+}
+.content ol{
+  @apply list-decimal list-outside space-y-1.5 ml-6 mt-1.5 mb-3;
+}
+conoent li{
+  @apply ml-3;
+}
+
+.content blockquote {
+  @apply border-l-8 pl-6 my-12 text-2xl;
+}
+
+.content a {
+  @apply underline;
+}
+
+.content a:hover {
+  @apply bg-amber-300 transition-all duration-300
+}
+
+.content .cta-btn{
+  @apply  no-underline transition-all duration-300;
+}
+
+.content .cta-btn:hover{
+  @apply bg-amber-300
+}
+</style>

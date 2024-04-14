@@ -25,5 +25,6 @@ export default defineNuxtConfig({
       anchorLinks: false
     },
   },
-  target: 'static'
+  target: 'static',
+
 })
