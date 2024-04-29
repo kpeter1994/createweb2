@@ -14,11 +14,14 @@ const props = defineProps<{
         <NuxtImg :src="props.image" :alt="props.title" sizes="sm:460px md:768px lg:380px" class="w-full aspect-[6/4] object-cover rounded-2xl saturate-0 contrast-200 " />
       </NuxtLink>
     </div>
-    <div class="lg:w-[70%]">
-      <NuxtLink :to="props.slug" class="text-neutral-950 hover:text-neutral-800 font-serif text-3xl mb-6 block">
-        {{props.title}}
-      </NuxtLink>
-      <p>{{props.description}}</p>
+    <div class="lg:w-[70%] flex flex-col justify-between">
+      <div>
+        <NuxtLink :to="props.slug" class="text-neutral-950 hover:text-neutral-800 font-serif text-3xl mb-6 block">
+          {{props.title}}
+        </NuxtLink>
+        <p>{{props.description}}</p>
+      </div>
+
       <div class="mt-3">
         <ButtonComponent :to="props.slug">Elolvasom</ButtonComponent>
       </div>

@@ -7,7 +7,7 @@
       <span class="text-2xl block font-extrabold mb-3 font-serif">Szeretnéd, ha a weboldalad magasba repítené a vállakozásod?</span>
       <span class="text-base block">Weboldalad az első benyomás, amit ügyfeleid látnak. Segítek, hogy ez lenyűgöző legyen! </span>
       <div class="mt-3">
-        <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+        <ButtonComponent class="no-underline" to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
       </div>
     </div>
 

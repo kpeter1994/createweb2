@@ -41,10 +41,21 @@ useHead({
 
       </section>
       <section class="bg-white pt-20 px-3">
-        <div class="max-w-7xl mx-auto">
-          <ContentList
-              path="/posts"
-              :query="{
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+          <div class="lg:w-2/12 order-2 lg:order-1">
+            <span class="block font-serif mb-3">Témák</span>
+            <ul class="space-y-2">
+              <li>SEO</li>
+              <li>Marketing</li>
+              <li>Hírdetés</li>
+              <li>Design</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+          <div class="lg:w-10/12 order-1 lg:order-2">
+            <ContentList
+                path="/posts"
+                :query="{
             draft:false ,
             limit: 5,
             sort: [{date: -1}]
@@ -58,7 +69,8 @@ useHead({
                   :slug="post.slug"
                   :description="post.description"/>
 
-          </ContentList>
+            </ContentList>
+          </div>
 
 
         </div>

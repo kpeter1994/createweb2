@@ -9,7 +9,7 @@ const toc: any = ref(null);
 
 onMounted(() => {
   if (content.value) {
-    const headers = content.value.querySelectorAll('h2, h3');
+    const headers = content.value.querySelectorAll('h2');
     const tocList = toc.value.querySelector('.toc-list');
 
     headers.forEach(header => {
@@ -20,7 +20,7 @@ onMounted(() => {
       const tocLink = document.createElement('a');
       tocLink.href = `#${id}`;
       tocLink.textContent = header.textContent;
-      tocLink.className = header.tagName.toLowerCase() === 'h2' ? 'font-bold block bg-opacity-50 underline p-1' : 'ml-4 block ';
+      tocLink.className = header.tagName.toLowerCase() === 'h2' ? 'font-bold text-blue-500 hover:text-blue-400 block bg-opacity-50 underline p-1' : 'ml-4 block text-blue-500 hover:text-blue-400';
 
       tocItem.appendChild(tocLink);
       tocList.appendChild(tocItem);
@@ -66,8 +66,8 @@ useHead({
 
           </section>
 
-          <section class="bg-white text-lg text-neutral-800">
-            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
+          <section class="bg-white text-neutral-800">
+            <div class="container mx-auto flex flex-col lg:flex-row gap-6">
               <div class="lg:w-3/12 border-r px-3">
                 <div ref="toc" class="sticky top-20">
                   <span class="font-bold mb-3 font-serif">Tartalomjegyzék</span>
@@ -75,7 +75,8 @@ useHead({
                 </div>
 
               </div>
-              <div ref="content" class="lg:w-8/12 pt-12 px-3 content">
+              <div ref="content" class="lg:w-8/12 lg:pt-12 px-3 content">
+
 
                 <ContentRenderer :value="doc"/>
 
@@ -111,16 +112,13 @@ useHead({
   @apply font-serif text-2xl mb-4 mt-12;
 }
 .content h3 {
-  @apply font-serif text-xl mb-4 mt-12;
+  @apply  text-xl mb-4 mt-12 font-semibold;
 }
 .content img {
   @apply w-full mb-8 rounded-[2rem];
 }
 .content p {
-  @apply mb-3;
-}
-.content p:first-of-type {
-  @apply text-xl mb-3;
+  @apply mb-3 text-lg leading-relaxed;
 }
 
 .content ul{
@@ -129,7 +127,7 @@ useHead({
 .content ol{
   @apply list-decimal list-outside space-y-1.5 ml-6 mt-1.5 mb-3;
 }
-conoent li{
+.content li{
   @apply ml-3;
 }
 
@@ -138,11 +136,11 @@ conoent li{
 }
 
 .content a {
-  @apply underline;
+  @apply underline text-blue-500;
 }
 
 .content a:hover {
-  @apply bg-amber-300 transition-all duration-300
+  @apply text-blue-600 transition-all duration-300
 }
 
 .content .cta-btn{

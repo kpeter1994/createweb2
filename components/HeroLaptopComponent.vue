@@ -10,7 +10,7 @@
           <p class="text-4xl text-center font-extrabold">Mi kell egy sikeres weboldalhoz?</p>
           <p class="text-center mt-4">Kérj egy ingyenes weboldal elemzést</p>
           <div class="flex justify-center mt-6">
-            <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+            <ButtonComponent class="bg-transparent" to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
           </div>
         </div>
       </div>

@@ -1,0 +1,13 @@
+### Send POST request with json body
+POST http://localhost:8000/api/send-mail
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "smitpeter777@gmail.com",
+    "phone": "1234567890",
+    "message": "Hello, I am John Doe"
+}
+
+
+
