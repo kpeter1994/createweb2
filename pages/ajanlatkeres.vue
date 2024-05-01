@@ -43,6 +43,10 @@ import InputSwitch from 'primevue/inputswitch';
               <Button class="px-3 py-2">Egyszerű</Button>
             </div>
 
+            <div class="flex justify-center">
+              <img class="w-[300px]" src="/image/gif/email-file.gif" alt="">
+            </div>
+
             <SimpleFormComponent/>
 
 

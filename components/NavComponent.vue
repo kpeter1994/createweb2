@@ -7,7 +7,7 @@
   <header class="hidden lg:block py-12 px-3">
     <div class="max-w-7xl 2xl:max-w-[95%] mx-auto flex justify-between">
       <NuxtLink to="/" class="flex gap-1.5 items-center">
-        <img width="35px" src="../assets/image/logo.svg" alt="">
+        <img width="35px" src="../assets/image/logo.svg" alt="createweb.hu">
         <span class="font-semibold text-lg">Createweb</span>
       </NuxtLink>
       <nav class="gap-3 items-center hidden lg:flex font-semibold">

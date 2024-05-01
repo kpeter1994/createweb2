@@ -44,8 +44,8 @@ useHead({
     }
   ],
   link: [
-    // { rel: 'icon', type: 'image/ico', href: '/favicon.ico' },
-    // { rel: 'apple-touch-icon', sizes: '32x32', href: '/apple-touch-icon.svg' },
+    { rel: 'icon', type: 'image/ico', href: 'favicon/favicon.ico' },
+    { rel: 'apple-touch-icon', sizes: '32x32', href: 'favicon/apple-touch-icon.svg' },
   ]
 });
 </script>
@@ -84,11 +84,8 @@ useHead({
               <div class="hidden xl:block xl:w-3/12 ">
                 <div>
                   <NuxtImg src="image/profil2.png" sizes="sm: width: 70px" alt="Kovács Péter" class="object-cover"/>
-                  <span class="font-serif text-center text-sm">Kovács Péter</span>
-                  <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem dolorem
-                    id
-                    incidunt laboriosam
-                    laborum libero magni non quae rem?</p>
+                  <span class="font-serif mb-1.5 block">Kovács Péter</span>
+                  <p class="text-sm">Több mint négy éve foglalkozom webhelytervezéssel, webfejlesztéssel és online marketinggel. A BGE-n tanultam gazdálkodást és menedzsmentet, majd később a webfejlesztéssel és webdesignnal kezdtem foglalkozni, hogy ezeket az ismereteket egy közös rendszerbe tudjam ötvözni.</p>
                 </div>
 
                 <div class="mt-20 sticky top-20">
@@ -112,7 +109,7 @@ useHead({
   @apply font-serif text-2xl mb-4 mt-12;
 }
 .content h3 {
-  @apply  text-xl mb-4 mt-12 font-semibold;
+  @apply  text-xl mb-4 mt-12 font-serif;
 }
 .content img {
   @apply w-full mb-8 rounded-[2rem];

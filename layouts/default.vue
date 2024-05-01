@@ -10,7 +10,7 @@ import ScrollTop from 'primevue/scrolltop';
 
       <div class="flex px-6 justify-between items-center absolute top-6 w-full">
         <NuxtLink to="/" class="flex gap-1.5 items-center">
-          <img width="35px" src="../assets/image/logo.svg" alt="">
+          <img width="35px" src="../assets/image/logo.svg" alt="createweb.hu">
           <span :class="open ? 'text-white' : 'text-neutral-900' " class="font-semibold text-lg">Createweb</span>
         </NuxtLink>
         <button :class="open ? 'text-white' : 'text-neutral-900' " @click="open = !open">
