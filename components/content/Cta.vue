@@ -10,7 +10,7 @@
       </div>
 
       <div class="mt-3">
-        <ButtonComponent class="no-underline" to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+        <ButtonComponent class="no-underline" rel="nofollow" to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
       </div>
     </div>
 

@@ -16,8 +16,8 @@ useHead({
     }
   ],
   link: [
-    // { rel: 'icon', type: 'image/ico', href: '/favicon.ico' },
-    // { rel: 'apple-touch-icon', sizes: '32x32', href: '/apple-touch-icon.svg' },
+    { rel: 'icon', type: 'image/ico', href: 'favicon/favicon.ico' },
+    { rel: 'apple-touch-icon', sizes: '32x32', href: 'favicon/apple-touch-icon.svg' },
   ]
 });
 </script>

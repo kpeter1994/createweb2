@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <NuxtLink :to="props.to" class="btn bg-amber-300 px-4 border border-black py-2.5 rounded-full inline-flex text-sm font-semibold transition-all duration-300 no-underline">
+  <NuxtLink :to="props.to" class="btn bg-amber-300 px-4 border border-black py-2.5 rounded-full inline-flex items-center text-sm font-semibold transition-all duration-300 no-underline">
     <slot></slot>
   </NuxtLink>
 </template>

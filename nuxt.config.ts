@@ -16,7 +16,13 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image", "nuxt-primevue", "@nuxt/content"],
+  modules: [
+    "@nuxt/image",
+    "nuxt-primevue",
+    "@nuxt/content",
+    "@stefanobartoletti/nuxt-social-share",
+    "nuxt-og-image"
+  ],
   primevue: {
     components: {
       include: ['Multiselect', 'Accordion', 'AccordionTab', 'AnimateOnScroll']
