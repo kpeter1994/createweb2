@@ -1,11 +1,11 @@
 ---
-title: "Fontos SEO statisztikák 2024-ben"
-date: 2024-00-14
+title: "Egyedi weboldal készítés"
+date: 2024-05-04
 draft: false
 tags: ["seo", "statisztika", "trendek"]
 description: "Ismerd meg a 2024-es év kulcsfontosságú SEO statisztikáit. Tudd meg, mely trendek dominálnak, hogyan változnak a rangsorolási tényezők és milyen új stratégiákat alkalmazhatsz a weboldalad sikerének növelésére."
-thumbnail: "image/blog/seo-statisztikak.jpg"
-slug: "seo-statisztikak"
+thumbnail: "image/blog/egyedi-weboldal-keszites/thumbnail.jpg"
+slug: "egyedi-weboldal-keszites"
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Meta tag-ek SEO-hoz: A legfontosabb címkék, amiket tudni érdemes"
+title: "Meta tag-ek SEO-hoz: A címkék, amikről érdemes tudni"
 date: 2024-05-03
 draft: false
 tags: ["seo", "statisztika", "trendek"]
-description: "Ismerd meg a 2024-es év kulcsfontosságú SEO statisztikáit. Tudd meg, mely trendek dominálnak, hogyan változnak a rangsorolási tényezők és milyen új stratégiákat alkalmazhatsz a weboldalad sikerének növelésére."
+description: "Az oldal áttekinti a SEO szempontból legfontosabb meta tageket, megmagyarázva szerepüket és leggyakoribb használati hibákat."
 thumbnail: "image/blog/meta-tag-seo/thumbnail.jpg"
 ogImage:
   component: BlogOgImage
@@ -19,9 +19,11 @@ slug: "meta-tag-seo"
 Ebben a bejegyzésben bemutatom melyek azok a meta tag-ek, amelyek elengedhetetlenek ahhoz, hogy az oldala jó helyezést érjen el a keresőben.
 
 ## Title Tag – Az oldal címe
-Bár ez konkrétan nem meta tag, funkcióját és szerepét tekintve ide soroljuk. Ez határozza meg az oldal címét és fontos információkat nyújt a keresőmotoroknak, arról, hogy miről szól az oldal.
+Bár ez konkrétan nem **meta tag**, funkcióját és szerepét tekintve ide soroljuk. Ez határozza meg az oldal címét és fontos információkat nyújt a keresőmotoroknak, arról, hogy miről szól az oldal.
 
-**Így néz ki:**
+::Bold
+  Így néz ki:
+::
 
 > `<title>Az oldal címe</title>`
 
@@ -83,8 +85,9 @@ Ha dátumot használunk egy címben, ne felejtsük el aktualizálni a bejegyzés
 
 A meta leírás összefoglalja az oldal tartalmát. A keresőmotorok gyakran használják a keresési eredmények kivonataként.
 
-**Így néz ki:**
-
+::Bold
+Így néz ki:
+::
 > `<meta name="description" content="Ez az oldal leírása">`
 
 ::img
@@ -123,7 +126,9 @@ A meta robots tag segít meghatározni, hogy a keresőrobotok hogyan kezeljék a
 ### Miért fontos a meta robots a SEO számára?
 A meta robots tag segítségével megakadályozhatjuk az oldal bizonyos részeinek indexelését, ha nem szeretnénk, hogy megjelenjen a keresőmotorokban. Segítségével optimalizálhatjuk az oldal link szerkezetét, irányítva a keresőmotorokat arra, hogy mely linkek követését részesítsék előnyben.
 
-**Így néz ki:**
+::Bold
+Így néz ki:
+::
 
 > `<meta name=”robots” content="noindex, nofollow">`
 > 
@@ -155,8 +160,9 @@ Típusai:
 
 ## Meta viewport - A weboldalak mobil nézete
 A meta viewport címke beállítja a weboldal látható területét. Arra szolgál, hogy utasítsa a böngészőt, hogyan jelenítse meg az oldalt különböző méretű képernyőkön (azaz asztali számítógépen/táblagépen/mobilon).
-
-**Így néz ki:**
+::Bold
+Így néz ki:
+::
 > `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
 ### Miért fontos a meta viewport a SEO számára?
@@ -178,7 +184,9 @@ A meta viewport beállítása még nem teszi reszponzívvá a weboldalt. Ahhoz, 
 
 Bár a meta charset tag technikailag egy meta elem, lényegi szerepe van a weboldalak tartalmának helyes megjelenítésében. Ez a tag határozza meg a weboldal karakterkódolását, ami alapvető a karakterek helyes megjelenítéséhez a különböző böngészőkben és eszközökön.
 
-**Így néz ki:**
+::Bold
+Így néz ki:
+::
 > `<meta charset="UTF-8">`
 
 ### Miért fontos a SEO számára?

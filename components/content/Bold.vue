@@ -12,6 +12,6 @@
 
 <style scoped>
 .subtitle{
-  @apply font-bold text-xl mt-12 font-serif !important;
+  @apply font-bold mt-6;
 }
 </style>

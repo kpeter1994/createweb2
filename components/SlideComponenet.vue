@@ -1,8 +1,31 @@
 <script lang="ts" setup>
+
+const isPlaying = ref(true)
+
+const pause = () => {
+  const sliders = document.querySelectorAll('.slider-track, .slider-track-slower')
+  sliders.forEach(slider => {
+    if (slider instanceof HTMLElement) {
+      slider.style.animationPlayState = 'paused';
+    }
+  });
+  isPlaying.value = false;
+}
+
+const play = () => {
+  const sliders = document.querySelectorAll('.slider-track, .slider-track-slower')
+  sliders.forEach(slider => {
+    if (slider instanceof HTMLElement) {
+      slider.style.animationPlayState = 'running';
+    }
+  });
+  isPlaying.value = true;
+}
+
 </script>
 
 <template>
-  <div class="max-w-7xl mt-16 mx-auto h-[49rem] max-h-[150vh] grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-8 overflow-hidden">
+  <div class="max-w-7xl mt-16 mx-auto h-[49rem] max-h-[150vh] grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-8 overflow-hidden relative">
     <div class="space-y-8 py-4 slider-track">
       <TestimonialCardComponent
           name="Józsa Péter"
@@ -185,6 +208,9 @@
 
 
     </div>
+
+    <button v-if="isPlaying" @click="pause()" class="absolute bottom-3 right-3 text-neutral-800"><i class="pi pi-pause-circle text-5xl"></i></button>
+    <button v-if="!isPlaying" @click="play()" class="absolute bottom-3 right-3 text-neutral-800"><i class="pi pi-play-circle text-5xl"></i></button>
   </div>
 </template>
 

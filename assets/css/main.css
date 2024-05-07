@@ -144,3 +144,33 @@ input:-webkit-autofill:active {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+/*Cookie*/
+
+.cookieControl__ControlButton{
+    left: 20px
+}
+.cookieControl__BarButtons button{
+    background-color: #f1f1f1;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.cookieControl__BarButtons :nth-child(1){
+    background-color: #FCD34D;
+    color: #000;
+}
+
+.cookieControl__BarButtons :nth-child(1):hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.cookieControl__BarContainer p {
+    @apply text-sm text-gray-600;
+}

@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 
+import {Vue3Lottie} from "vue3-lottie";
+import Arrow from "assets/animation/arrow.json";
 
 useHead({
   title: 'Céges Weboldal készítés | Createweb',
@@ -37,13 +39,20 @@ useHead({
 
             <div class="lg:w-6/12 xl:1/3 ">
               <div class="max-w-xl mx-auto flex flex-col gap-3 lg:pb-12">
-                <span class="text-center text-4xl lg:text-5xl font-serif lg:text-left md:text-5xl xl:text-6xl font-extrabold">Ne engedd, hogy a webodalad a nővekedésed útjába áljon</span>
+                <span class="text-center text-4xl xl:text-5xl font-serif lg:text-left md:text-5xl 2xl:text-6xl font-extrabold">Ne engedd, hogy a webodalad a nővekedésed útjába áljon</span>
                 <h1 class="text-center lg:text-left xl:text-lg">Ha nem szeretnéd magad a szerencsére bízni, a akkor neked
                   is
                   egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne
                   kockáztass! Kérj ajánlatot!</h1>
-                <div class="flex justify-center lg:justify-start">
+                <div class="flex justify-center lg:justify-start relative">
                   <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+                  <Vue3Lottie
+                          class="absolute -top-10 right-60 pointer-events-none scale-x-[-1] translate-x-12 md:translate-x-0 lg:scale-x-[1] lg:translate-x-0"
+                          :animation-data="Arrow"
+                          :height="200"
+                          :width="300"
+                      />
+
                 </div>
               </div>
             </div>
@@ -102,15 +111,15 @@ useHead({
 
       </section>
 
-      <section id="method" class="py-28 lg:py-40 bg-white ">
-        <div v-animateonscroll="{ enterClass: 'animate-fade-left animate-ease-out' }" class="max-w-7xl mx-auto px-3 flex flex-col lg:flex-row gap-6 transition-all ">
+      <section id="method" class="py-20 lg:py-40 bg-white overflow-hidden">
+        <div v-animateonscroll="{ enterClass: 'animate-fade-left animate-ease-out' }" class="container mx-auto px-3 flex flex-col lg:flex-row gap-6 transition-all ">
           <div class="lg:w-1/2">
             <div class="max-w-2xl mb-20">
-              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[500ms] animate-duration-[1000ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl">Szeretnéd, ha többé nem kellene aggódnod az ügyfélszerzés miatt?</p>
-              <p class="mt-6 text-lg text-neutral-600">
+              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">Szeretnéd, ha többé nem kellene aggódnod az ügyfélszerzés miatt?</p>
+              <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
                 Az ügyfélszerzés már nem jelent nehézséget, ha vállalkozásod stratégiai marketing szemléletre épül. A gyors és hirtelen ügyfélszerzés helyett átgondoltabb, egymásra épülő marketingeszközöket alkalmazva elérhetjük, hogy az üzleti növekedésed egy stabil és fenntartható mederbe terelődjön, így segítve elérni üzleti céljaidat.
               </p>
-              <p class="mt-6 text-lg text-neutral-600">
+              <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
                 Egy ügyféleszerző folyamat kiépítése időigényes feladat lehet, viszont hosszútávon olyan előnyöket jelent, amivel nem képes versenyezni az a konkurensed, akinek a marketing eszköztára kimerül a fizetett hirdetéseknél.
               </p>
             </div>
@@ -123,7 +132,7 @@ useHead({
 
       </section>
 
-      <section id="services" class="bg-neutral-50 py-20 px-3">
+      <section id="services" class="bg-neutral-50 py-20 lg:py-40 px-3">
         <div class="max-w-2xl mx-auto text-center">
 
           <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
@@ -131,7 +140,9 @@ useHead({
             Hogyan tudok neked segíteni?
           </h2>
 
-          <p class="text-lg mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur culpa doloribus eligendi eos esse in laudantium perspiciatis provident saepe.</p>
+          <p class="text-lg mt-6 text-neutral-600">
+            Felfedezzük vállalkozásod piacát és konkurenseit, hogy közösen megtervezzük a legmegfelelőbb marketing- és weboldal stratégiát, majd lépésről lépésre építjük fel webes jelenlétedet a célközönség hatékony eléréséért. Rendszeres ellenőrzésekkel és finomhangolással biztosítjuk, hogy marketingtevékenységed folyamatosan fejlődjön és eredményeket hozzon.
+          </p>
 
         </div>
         <div class="max-w-7xl mx-auto flex justify-center mt-16 flex-wrap">
@@ -144,17 +155,17 @@ useHead({
           <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[400ms] animate-duration-[1000ms]' }"
                                  image="material-symbols_developer-mode-tv-outline.svg" title="Weboldal készítés"
                                  description="Ha a terv elnyerte tetszésedet, akkor a legmodernebb webes eszközök segítségével elkészítem számodra azt a gyors, mobilbarát és keresőoptimalizált weboldalt, amely jó eséllyel maga mögé utasítja konkurenseid lomha WordPress oldalait."/>
-          <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[600ms] animate-duration-[1000ms]' }"
+          <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
                                  image="nimbus_marketing.svg" title="Tartalommarketing létrehozása"
                                  description="Miután elkészült a weboldalad, már csak el kell juttatnunk ajánlatodat a jövendőbeli ügyfeleidnek. A marketingterv alapján elkészítjük azokat a tartalmakat, amelyek értéket képviselnek a potenciális ügyfeleid számára, ezzel téve őket potenciálisból rendszeres ügyfelekké."/>
-          <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[800ms] animate-duration-[1000ms]' }"
+          <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[400ms] animate-duration-[1000ms]' }"
                                  image="gala_search.svg" title="Ellenőrzés és tökéletesítés"
                                  description="Nem ígérhetem meg neked, hogy azonnal megtaláljuk azt a varázslatos megoldást, amely rögtön a legtöbb ügyfelet hozza el neked, de megígérhetem, hogy minden lépést mérni fogunk, így láthatóvá válik, mely irányokban érdemes tovább terjeszkednünk, hogy a lehető legjobb marketing eredményt érjünk el."/>
 
         </div>
       </section>
 
-      <section id="quote" class="bg-white bg-grid2 bg-cover bg-center py-40 px-3">
+      <section id="quote" class="bg-white bg-grid2 bg-cover bg-center py-20 lg:py-40 px-3">
         <div class="max-w-4xl mx-auto">
           <p v-animateonscroll="{ enterClass: 'animate-fade animate-once animate-ease-out animate-delay-[100ms] animate-duration-[1000ms]' }" class="font-serif font-semibold  text-3xl lg:text-4xl text-neutral-800">Az őrültség nem más, mint ugyanazt
             tenni újra és újra, és várni, hogy az eredmény más legyen.</p>
@@ -168,18 +179,16 @@ useHead({
         </div>
       </section>
 
-      <section id="testimonial" class="bg-gray-50 py-20 px-3">
+      <section id="testimonial" class="bg-gray-50 py-20 lg:py-40 px-3">
         <div class="max-w-2xl mx-auto text-center">
           <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
               class="font-semibold font-serif text-3xl lg:text-4xl">Ügyfeleim véleménye</h2>
-          <p class="text-lg mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur
-            culpa
-            doloribus eligendi eos esse in laudantium perspiciatis provident saepe.</p>
+
         </div>
         <SlideComponenet/>
       </section>
 
-      <section id="references" class="bg-neutral-100 bg-center">
+      <section id="references" class="bg-neutral-100 bg-center ">
         <div class="flex flex-col lg:flex-row relative">
           <div class="lg:w-1/2 order-2 lg:order-1">
             <NuxtImg src="/image/references.png" sizes="xs:480px sm:768px md:1024px lg:860px xl:960px" alt="references"
@@ -201,13 +210,14 @@ useHead({
 
       </section>
 
-      <section class="bg-white py-20">
-        <div class="max-w-7xl mx-auto p-12 lg:p-20 rounded-[2rem] bg-black text-white">
+      <section class="bg-white py-20 lg:py-40">
+        <div class="max-w-7xl mx-auto">
+          <div class="mx-3">
+            <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
+                class="font-semibold font-serif text-3xl lg:text-4xl">Blog</h2>
+          </div>
 
-          <h2 class="font-semibold font-serif text-3xl lg:text-4xl">Kapcsolat</h2>
-          <p class="text-lg mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur
-            culpa
-            doloribus eligendi eos esse in laudantium perspiciatis provident saepe.</p>
+          <BlogListComponent class="mt-12"/>
 
         </div>
       </section>

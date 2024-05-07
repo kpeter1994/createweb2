@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 
 useHead({
-  title: 'Céges Weboldal készítés | Createweb',
+  title: 'Cikkek SEO, marketing és design témákban ',
   htmlAttrs: {
     lang: 'hu',
   },
   meta: [
     {
       name: "description",
-      content: 'Ha nem szeretnéd magad a szerencsére bízni, a akkor neked is egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne kockáztass! Kérj ajánlatot!',
+      content: 'Optimalizált SEO cikkek, innovatív marketingstratégiák és kreatív design ötletek a hatékony kommunikációért',
     },
     {
       name: "charset",
@@ -31,8 +31,8 @@ useHead({
           <div class="max-w-7xl">
             <div class="max-w-2xl mx-auto mt-12">
               <span class="block font-serif">Blog</span>
-              <h1 class="font-serif text-5xl text-neutral-950 mt-4 mb-3">The latest articles and news</h1>
-              <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, voluptas.</p>
+              <h1 class="font-serif text-5xl text-neutral-950 mt-4 mb-3">Cikkek SEO, marketing és design témákban</h1>
+              <p class="text-lg">Bővítsd ismereteidet SEO, marketing és design témákban: friss ötletek és stratégiák a sikerhez.</p>
 
             </div>
           </div>

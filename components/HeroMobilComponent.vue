@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 
+import Man from "assets/animation/man.json";
+
 const Time = () => {
   const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
   const time = new Date().toLocaleTimeString([], options);
@@ -9,7 +11,7 @@ const Time = () => {
 
 <template>
   <div>
-    <div class="overflow-hidden relative mx-auto max-w-[380px] h-[490px] bg-white ">
+    <div class="overflow-hidden relative mx-auto max-w-[380px] h-[490px] bg-white rounded-t-[60px]">
       <div class="p-6 relative w-full mx-auto bg-gray-50 rounded-t-[60px]">
         <div class="flex justify-between items-center px-3">
           <span class="block text-sm ml-2">{{Time().time}}</span>
@@ -19,14 +21,16 @@ const Time = () => {
             <img src="/image/mobil/Battery.svg" alt="töltötség">
           </div>
         </div>
-        <div class="mt-20 bg-white shadow pt-40 rounded-t-[1rem] bg-hero-m flex pb-20">
-          <div>
-            <p class="text-center text-3xl font-bold">Mi kell egy sikeres weboldalhoz?</p>
-            <p class="text-center mt-4">Kérj egy ingyenes weboldal elemzést</p>
-            <div class="flex justify-center mt-6">
-              <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+        <div class="mt-20 bg-white shadow pt-20 rounded-t-[1rem] flex pb-40">
+          <client-only>
+            <div class="flex w-full justify-center">
+              <Vue3Lottie
+                  :animation-data="Man"
+                  :width="230"
+              />
             </div>
-          </div>
+
+          </client-only>
         </div>
         <NotificationComponent />
 

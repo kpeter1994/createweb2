@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import Article from "~/pages/article.vue";
+import Article from "~/pages/adatkezelesi.vue";
 import Chip from 'primevue/chip';
 import {useDateFormatter} from "~/composables/useDateFormatter";
 
@@ -81,7 +81,7 @@ useHead({
             <div class="container mx-auto flex flex-col lg:flex-row gap-6">
               <div class="lg:w-3/12 border-r px-3 pb-20">
 
-                <div ref="toc" class="sticky top-3 2xl:top-20 h-[800px] overflow-y-auto px-1">
+                <div ref="toc" class="sticky top-3 2xl:top-20 lg:h-[700px] 2xl:h-[800px] overflow-y-auto px-1">
                   <span class="font-bold mb-3 font-serif block"><i class="pi pi-book mr-1.5 opacity-70"></i>Tartalomjegyzék</span>
                   <ul class="max-w-md space-y-2 list-inside transition-all text-sm 2xl:text-base toc-list"></ul>
                 </div>
@@ -120,7 +120,7 @@ useHead({
           <section class="bg-neutral-50">
             <div class="container mx-auto flex">
               <div class="lg:w-8/12 mx-auto">
-                <ArticleRecommendationComponent class="my-20"></ArticleRecommendationComponent>
+                <ArticleRecommendationComponent :tags="doc.tags" class="my-20"></ArticleRecommendationComponent>
               </div>
             </div>
           </section>
