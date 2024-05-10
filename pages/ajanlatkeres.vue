@@ -23,7 +23,7 @@ import InputSwitch from 'primevue/inputswitch';
       </section>
 
       <section class="bg-white">
-        <div class="max-w-7xl mx-auto flex flex-col gap-6 lg:flex-row px-3 pt-6">
+        <div class="max-w-7xl mx-auto flex flex-col gap-6 lg:flex-row px-3 pt-6 pb-20">
           <div class="lg:w-1/2">
             <h2 class="font-serif mb-6">Elérhetőségek</h2>
             <div class="flex gap-6 py-6 border-b ">
@@ -38,10 +38,10 @@ import InputSwitch from 'primevue/inputswitch';
 
           </div>
           <div class="lg:w-1/2">
-            <div class="border border-neutral-500 p-1.5 rounded-full inline-flex gap-3  text-sm mb-6">
-              <Button class="px-3 py-2 bg-black text-white rounded-full">Részletes</Button>
-              <Button class="px-3 py-2">Egyszerű</Button>
-            </div>
+<!--            <div class="border border-neutral-500 p-1.5 rounded-full inline-flex gap-3  text-sm mb-6">-->
+<!--              <Button class="px-3 py-2 bg-black text-white rounded-full">Részletes</Button>-->
+<!--              <Button class="px-3 py-2">Egyszerű</Button>-->
+<!--            </div>-->
 
 
             <SimpleFormComponent/>

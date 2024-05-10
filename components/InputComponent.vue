@@ -27,6 +27,7 @@ watch(() => props.modelValue, (newValue) => {
 <template>
     <div class="relative border-b border-neutral-500 py-3 ">
       <input type="text"
+             required
              :id="props.name"
              :type="props.type"
              v-model="inputValue"

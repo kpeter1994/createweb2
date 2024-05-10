@@ -57,20 +57,12 @@ const responsiveOptions = ref([
         <NuxtImg loading="lazy" @click="displayBasic = true" :src="`/image/references/${props.project}/${props.project}-hero.png`" format="webp" sizes="xs: 476px sm: 645px md: 1256px lg:1256px" :alt="props.project" />
 
         <div class="flex justify-center mb-20">
-          <ButtonComponent @click="displayBasic = true" class="bg-white cursor-pointer">Galléria</ButtonComponent>
+          <ButtonComponent @click="displayBasic = true" class="bg-white cursor-pointer">Részletek</ButtonComponent>
+          <NuxtLink :to="`/referenciak/${props.project}`" class="ml-4">
+            <ButtonComponent class="cursor-pointer">Weboldal megtekintése</ButtonComponent>
+          </NuxtLink>
         </div>
 
-        <div class="card flex justify-content-center">
-          <Galleria v-model:visible="displayBasic" :value="images" :responsiveOptions="responsiveOptions" :numVisible="9" containerStyle="max-width: 60%" :circular="true" :fullScreen="true" :showItemNavigators="true">
-            <template #item="slotProps">
-              <NuxtImg loading="lazy" format="webp" sizes="xs: 300px sm: 645px lg:1152px" :src="slotProps.item.thumbnailImageSrc" alt="referencia" class="w-full" />
-            </template>
-            <template #thumbnail="slotProps">
-              <NuxtImg loading="lazy" format="webp" sizes="sm: 300px lg:360px" :src="slotProps.item.thumbnailImageSrc" alt="referencia" class="w-full" />
-            </template>
-          </Galleria>
-
-        </div>
       </div>
 
     </div>

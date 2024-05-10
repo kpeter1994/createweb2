@@ -1,16 +1,16 @@
 ---
-title: "Meta tag-ek SEO-hoz: A címkék, amikről érdemes tudni"
+title: "Adatkezelési Tájékoztató"
 date: 2024-05-03
 draft: false
 tags: ["seo", "statisztika", "trendek"]
-description: "Az oldal áttekinti a SEO szempontból legfontosabb meta tageket, megmagyarázva szerepüket és leggyakoribb használati hibákat."
+description: "Az Adatkezelő jelen dokumentumban lefektetett szabályokat, kötelezettségeket saját magára nézve jogilag kötelező érvényűnek tekinti és azokat működése során következetesen alkalmazza. Kijelenti, hogy az itt leírt adatvédelmi eljárások megfelelnek az érvényes nemzeti és Európai Uniós adatvédelmi jogszabályoknak. Az Adatkezelő kiemelten kezeli az információs önrendelkezés jogát, különös tekintettel a személyes adatokra, és minden lehetséges intézkedést megtesz ennek érvényesítése érdekében. Az Adatkezelési Tájékoztató bármikor módosítható, a közzététel és az érintettek tájékoztatása mellett."
 thumbnail: "image/blog/meta-tag-seo/thumbnail.jpg"
 ogImage:
   component: BlogOgImage
   props:
     image: image/blog/meta-tag-seo/thumbnail.jpg
     readingMins: 5
-slug: "meta-tag-seo"
+slug: "adatkezelesi"
 ---
 
 Ez a dokumentum azért készült, hogy Kovács Péter, mint adatkezelő (a továbbiakban Adatkezelő) ismertesse az adatvédelmi szabályokat, eljárásokat és védelmi intézkedéseket, amelyeket az Adatkezelő szervezetében alkalmaznak a személyes adatok kezelése során. Ez a tájékoztató szintén informálja az ügyfeleket, partnereket, valamint minden természetes és jogi személyt, akik az Adatkezelővel jogilag értelmezhető kapcsolatban állnak, a kezelt személyes adatokról és az adatkezelés módjáról.
