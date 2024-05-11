@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import InputSwitch from 'primevue/inputswitch';
-
-
 
 </script>
 
@@ -38,10 +35,7 @@ import InputSwitch from 'primevue/inputswitch';
 
           </div>
           <div class="lg:w-1/2">
-<!--            <div class="border border-neutral-500 p-1.5 rounded-full inline-flex gap-3  text-sm mb-6">-->
-<!--              <Button class="px-3 py-2 bg-black text-white rounded-full">Részletes</Button>-->
-<!--              <Button class="px-3 py-2">Egyszerű</Button>-->
-<!--            </div>-->
+
 
 
             <SimpleFormComponent/>

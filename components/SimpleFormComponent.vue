@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import {ref} from 'vue';
+import SendMail from "assets/animation/SendMail.json";
+const sended = ref(false);
 
 const form = ref({
   name: '',
@@ -12,6 +14,8 @@ const config = useRuntimeConfig();
 
 async function sendRequest() {
 
+  sended.value = true;
+
   await useApiFetch('/sanctum/csrf-cookie')
 
   const { data, error} = await useApiFetch('/api/send-mail', {
@@ -21,10 +25,20 @@ async function sendRequest() {
 
   return { data, error};
 }
+
 </script>
 
 <template>
-  <form @submit.prevent="sendRequest">
+  <client-only v-if="sended">
+    <div class="flex p-6">
+      <Vue3Lottie
+          :animation-data="SendMail"
+          :loop="false"
+      />
+    </div>
+
+  </client-only>
+  <form v-if="!sended" @submit.prevent="sendRequest">
     <div class="border border-neutral-500 rounded-2xl ">
       <InputComponent required v-model="form.name" type="text" label="Név" name="name"></InputComponent>
       <InputComponent required v-model="form.email" type="email" label="Email" name="email"></InputComponent>

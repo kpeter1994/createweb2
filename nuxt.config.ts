@@ -55,7 +55,7 @@ export default defineNuxtConfig({
   },
   primevue: {
     components: {
-      include: ['Multiselect', 'Accordion', 'AccordionTab', 'AnimateOnScroll']
+      include: ['Multiselect', 'Accordion', 'AccordionTab', 'AnimateOnScroll', 'DeferredContent']
     },
     directives: {
       include: ['AnimateOnScroll']

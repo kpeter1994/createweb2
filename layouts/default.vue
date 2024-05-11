@@ -2,6 +2,8 @@
 const open = ref(false);
 import ScrollTop from 'primevue/scrolltop';
 
+import ProgressSpinner from 'primevue/progressspinner';
+
 const {
   cookiesEnabled,
   cookiesEnabledIds,
@@ -24,6 +26,14 @@ watch(
     },
     { deep: true },
 )
+
+const isContentLoaded = ref(false);
+onMounted(() => {
+  // Itt feltételezzük, hogy a slot betöltése aszinkron művelet.
+  // A valóságban itt kellene valamilyen logikát implementálni,
+  // amely meghatározza, mikor van a slot teljesen betöltve.
+  isContentLoaded.value = true;
+});
 
 </script>
 <template>
@@ -67,12 +77,16 @@ watch(
 
     </header>
 
-    <slot/>
+    <div v-if="!isContentLoaded" class="h-screen w-full bg-white flex justify-center items-center">
+      <ProgressSpinner />
+    </div>
+
+    <slot v-if="isContentLoaded"/>
     <ScrollTop class="bg-amber-400" />
 
   </div>
 
-  <FooterComponent></FooterComponent>
+  <FooterComponent v-if="isContentLoaded"></FooterComponent>
 </template>
 
 <style scoped>
