@@ -2,7 +2,7 @@
 title: "Meta tag-ek SEO-hoz: A címkék, amikről érdemes tudni"
 date: 2024-05-03
 draft: false
-tags: ["seo", "statisztika", "trendek"]
+tags: ["seo", "beálítások", "kódolás"]
 description: "Az oldal áttekinti a SEO szempontból legfontosabb meta tageket, megmagyarázva szerepüket és leggyakoribb használati hibákat."
 thumbnail: "image/blog/meta-tag-seo/thumbnail.jpg"
 ogImage:

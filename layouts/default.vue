@@ -4,6 +4,8 @@ import ScrollTop from 'primevue/scrolltop';
 
 import ProgressSpinner from 'primevue/progressspinner';
 
+const isLoaded = ref(false);
+
 const {
   cookiesEnabled,
   cookiesEnabledIds,
@@ -27,6 +29,9 @@ watch(
     { deep: true },
 )
 
+onMounted(() => {
+  isLoaded.value = true
+})
 
 
 </script>
@@ -71,13 +76,16 @@ watch(
 
     </header>
 
+    <div v-if="!isLoaded" class="w-full min-h-screen flex justify-center items-center bg-white">
+      <ProgressSpinner />
+    </div>
 
     <slot/>
     <ScrollTop class="bg-amber-400" />
 
   </div>
 
-  <FooterComponent></FooterComponent>
+  <FooterComponent v-if="isLoaded"></FooterComponent>
 </template>
 
 <style scoped>

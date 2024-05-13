@@ -52,7 +52,7 @@ useHead({
               <li>SEO</li>
             </ul>
           </div>
-          <div class="lg:w-10/12 order-1 lg:order-2">
+          <div class="lg:w-10/12 order-1 lg:order-2 pb-20">
             <ContentList
                 path="/posts"
                 :query="{

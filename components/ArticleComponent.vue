@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <article class="flex flex-col lg:flex-row gap-6 pt-16 border-t mb-16 ">
+  <article class="flex flex-col lg:flex-row gap-6 py-6 border-t ">
     <div class="lg:w-[30%] relative">
       <NuxtLink :to="'/blog/' + props.slug">
         <NuxtImg :src="props.image" :alt="props.title" sizes="sm:460px md:768px lg:380px" class="w-full aspect-[6/4] object-cover rounded-2xl   " />
