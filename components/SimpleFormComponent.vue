@@ -18,11 +18,13 @@ async function sendRequest() {
 
   await useApiFetch('/sanctum/csrf-cookie')
 
+
   const { data, error} = await useApiFetch('/api/send-mail', {
     method: 'POST',
     body: form.value
   });
 
+  console.log(data, error);
   return { data, error};
 }
 

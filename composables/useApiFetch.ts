@@ -22,6 +22,7 @@ export const useApiFetch = <T>(path: string, options: UseFetchOptions<T> = {}) =
     }
   }
 
+  console.log(headers)
 
   return useFetch(config.public.apiBaseUrl + path, {
     credentials: 'include',

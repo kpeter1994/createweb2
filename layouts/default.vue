@@ -27,13 +27,7 @@ watch(
     { deep: true },
 )
 
-const isContentLoaded = ref(false);
-onMounted(() => {
-  // Itt feltételezzük, hogy a slot betöltése aszinkron művelet.
-  // A valóságban itt kellene valamilyen logikát implementálni,
-  // amely meghatározza, mikor van a slot teljesen betöltve.
-  isContentLoaded.value = true;
-});
+
 
 </script>
 <template>
@@ -77,16 +71,13 @@ onMounted(() => {
 
     </header>
 
-    <div v-if="!isContentLoaded" class="h-screen w-full bg-white flex justify-center items-center">
-      <ProgressSpinner />
-    </div>
 
-    <slot v-if="isContentLoaded"/>
+    <slot/>
     <ScrollTop class="bg-amber-400" />
 
   </div>
 
-  <FooterComponent v-if="isContentLoaded"></FooterComponent>
+  <FooterComponent></FooterComponent>
 </template>
 
 <style scoped>
