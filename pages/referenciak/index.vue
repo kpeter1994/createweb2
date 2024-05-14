@@ -23,12 +23,11 @@ import InputSwitch from 'primevue/inputswitch';
 
       <section>
         <ReferenceComponent project="optima" :imageNumber="3"/>
-        <ReferenceComponent project="addkonz" :imageNumber="4"/>
         <ReferenceComponent project="ujitsvelunk" :imageNumber="4"/>
-        <ReferenceComponent project="szabadabban" :imageNumber="4"/>
+        <ReferenceComponent project="addkonz" :imageNumber="4"/>
         <ReferenceComponent project="ertekbecslo" :imageNumber="4"/>
+        <ReferenceComponent project="szabadabban" :imageNumber="4"/>
       </section>
-
 
 
     </main>

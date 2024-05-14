@@ -49,8 +49,7 @@ sections:
   fourth:
     title: "Hogyan tudunk együtt dolgozni?"
     contents: [
-    "Kapcsolatfelvétel után egyedi konzultáción keresztül feltérképezem a vállalkozásod igényeit, és testreszabott, gyors és figyelemfelkeltő landing oldalt készítünk, amely kiemelkedik a versenyben.",
-
+  
     "Miután kitöltötted a kapcsolatfelvételi űrlapot 24 órán belül felveszem veled a kapcsolatot és egyeztetünk egy online vagy egy személyes időpontot, ahol feltérképezem az igényeidet és a célcsoportodat, hogy pontosan milyen landing oldalra is lenne szükséged, ahhoz, hogy elérjük azokat az eredményeket, amiket célként kitűztünk a vállalkozásodnak."
   ]
 ---

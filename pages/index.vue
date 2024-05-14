@@ -4,14 +4,14 @@ import {Vue3Lottie} from "vue3-lottie";
 import Arrow from "assets/animation/arrow.json";
 
 useHead({
-  title: 'Céges Weboldal készítés | Createweb',
+  title: 'Egyedi Céges Weboldal készítés | Createweb',
   htmlAttrs: {
     lang: 'hu',
   },
   meta: [
     {
       name: "description",
-      content: 'Ha nem szeretnéd magad a szerencsére bízni, a akkor neked is egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne kockáztass! Kérj ajánlatot!',
+      content: 'Egyedi céges weoldal készítés, marketingtervezés és tartalommarketing szolgáltatások.',
     },
     {
       name: "charset",
@@ -38,8 +38,9 @@ useHead({
           <div class="max-w-7xl 2xl:max-w-[95%] mx-auto flex flex-col lg:flex-row px-3 pt-6 lg:pt-20">
 
             <div class="lg:w-6/12 xl:1/3 ">
-              <div class="max-w-xl mx-auto flex flex-col gap-3 lg:pb-12">
-                <span class="text-center text-4xl xl:text-5xl font-serif lg:text-left md:text-5xl 2xl:text-6xl font-extrabold">Ne engedd, hogy a webodalad a nővekedésed útjába áljon</span>
+              <div class="max-w-2xl mx-auto flex flex-col gap-3 lg:pb-12">
+                <h1 class="font-bold text-amber-500">Egyedi céges webolal készítés</h1>
+                <span class="text-center text-4xl xl:text-5xl font-serif lg:text-left md:text-5xl 2xl:text-6xl font-extrabold">A vevőid megérdemlik, hogy megismerjék a vállalkozásod nagyszerőségét</span>
                 <h1 class="text-center lg:text-left xl:text-lg">Ha nem szeretnéd magad a szerencsére bízni, a akkor neked
                   is
                   egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne
@@ -122,10 +123,15 @@ useHead({
               <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
                 Egy ügyféleszerző folyamat kiépítése időigényes feladat lehet, viszont hosszútávon olyan előnyöket jelent, amivel nem képes versenyezni az a konkurensed, akinek a marketing eszköztára kimerül a fizetett hirdetéseknél.
               </p>
+
+              <div class="flex justify-center lg:justify-start relative mt-6">
+                <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+
+              </div>
             </div>
           </div>
           <div class="lg:w-1/2">
-            <img class="w-full" src="/image/marketing.svg" alt="">
+            <img class="w-full" src="/image/marketing.svg" alt="céges webolal készítés">
           </div>
 
         </div>
@@ -143,6 +149,8 @@ useHead({
           <p class="text-lg mt-6 text-neutral-600">
             Felfedezzük vállalkozásod piacát és konkurenseit, hogy közösen megtervezzük a legmegfelelőbb marketing- és weboldal stratégiát, majd lépésről lépésre építjük fel webes jelenlétedet a célközönség hatékony eléréséért. Rendszeres ellenőrzésekkel és finomhangolással biztosítjuk, hogy marketingtevékenységed folyamatosan fejlődjön és eredményeket hozzon.
           </p>
+
+
 
         </div>
         <div class="max-w-7xl mx-auto flex justify-center mt-16 flex-wrap">

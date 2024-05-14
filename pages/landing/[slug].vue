@@ -7,6 +7,7 @@ import Ads from "assets/animation/ads.json";
 import target from "assets/animation/target.json";
 import theam from "assets/animation/theam.json";
 import BigButtonComponent from "~/components/BigButtonComponent.vue";
+import ExitPopupComponent from "~/components/ExitPopupComponent.vue";
 
 const {slug} = useRoute().params
 
@@ -89,7 +90,6 @@ useHead({
 
         </section>
 
-
         <section class="py-6 lg:py-40 bg-amber-50 overflow-hidden relative">
           <img class="w-full absolute left-0 right-0 top-0" src="/image/trap.svg" alt="weboldal készítés">
 
@@ -107,10 +107,15 @@ useHead({
             </div>
             <div class="lg:w-1/2">
               <div class="max-w-2xl mb-40">
-                <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">{{doc.sections.first.title}}</h2>
-                <p v-for="parag in doc.sections.first.contents"
-                   v-html="parag"
-                   class="mt-6 text-lg text-neutral-600 text-center leading-relaxed lg:text-xl lg:text-left"></p>
+                <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">
+                  Mikor érdemes együtt dolgoznunk?
+                </h2>
+                <ul class="mt-6 text-xl space-y-3 list-disc pl-6">
+                  <li>Ha elkezdtél egy vállalkozást, de még nem vagy jelen az online térben</li>
+                  <li>Ha szeretnéd, hogy a vevőid megismerjék, hogy miben vagy jobb a versenytársaidnál</li>
+                  <li>Ha van már weboldalad, de az nem képviseli megfelelően a vállalkozásod értékeit</li>
+                  <li>Ha szeretnéd, hogy a weboldalad teljes mértékben támogassa a céljaid elérését</li>
+                </ul>
 
               </div>
             </div>
@@ -155,7 +160,6 @@ useHead({
           </div>
 
         </section>
-
 
         <section class="bg-amber-50 py-20 lg:py-20 px-3 relative overflow-hidden">
 
@@ -202,14 +206,16 @@ useHead({
             <div class=" container mx-auto flex flex-col lg:flex-row">
               <div class="lg:w-1/3 p-6">
                 <img class="w-full" src="/image/dudits-denes.png" alt="Dudits Dénes">
+                <span class="block text-center">Dudits Dénes terápiás programigazgató, <br> az Optima Online megalapítója</span>
               </div>
               <div class="lg:w-1/2 p-6">
+                <span class="mb-3 block font-semibold text-neutral-600 text-center lg:text-left">Egy ügyfelem írta:</span>
                 <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }"
                     class="font-semibold font-serif text-3xl lg:text-7xl text-center lg:text-left mb-12">
                   Régi álmom vált valóra
                 </h2>
                 <p class="mt-3 lg:text-lg text-neutral-600 relative z-10">Régi álmom vált valóra, amikor létrehoztam az Optima Online függőség kezeléssel foglalkozó platformot. Mindig is szerettem volna, ha a több mint 20 éves tapasztalatomat, amit a függőségkezelés területén szereztem több emberrel is megoszthatom. A terület specifikussága miatt azonban nagy kihívást jelentett elérni azokat, akiket a program érinthet. A Google nem engedélyezi a függőséggel kapcsolatos kulcsszavakra történő hirdetést, és a Facebookon is nehezen lehet célozni.</p>
-                <p class="mt-3 lg:text-lg text-neutral-600 relative z-10">Ezen nehézségek miatt kerestem fel Pétert, hogy megvitassuk, hogyan tudnánk elérni több embert, akik érintettek lehetnek a témában. Péter kidolgozott egy stratégiát, amelynek lényege, hogy összegyűjtjük azokat a témákat, kérdéseket és problémákat, amelyek érdekesek lehetnek a függőséggel küzdők számára, ezeket blog formájában közzétesszük és innen tereljük át őket egy landing oldalra, amely bemutatja az Optima előnyeit. Másrészt, az oldalon elhelyezett Facebook követő linknek köszönhetően már könnyebben elérhetem őket Facebook-kampányokkal is. Ennek a stratégiának köszönhetően dinamikusan nő az új regisztráltak száma az oldalon, így sokkal több érintett tudja igénybe venni ezt a lehetőséget.</p>
+                <p class="mt-3 lg:text-lg text-neutral-600 relative z-10">Ezen nehézségek miatt kerestem fel Pétert, hogy megvitassuk, hogyan tudnánk elérni több embert, akik érintettek lehetnek a témában. Péter kidolgozott egy stratégiát, amelynek lényege, hogy összegyűjtjük azokat a témákat, kérdéseket és problémákat, amelyek érdekesek lehetnek a függőséggel küzdők számára, ezeket blog formájában közzétesszük és innen tereljük át őket egy landing oldalra, amely bemutatja az Optima előnyeit. Ennek a stratégiának köszönhetően dinamikusan nő az új regisztráltak száma az oldalon, így sokkal több érintett tudja igénybe venni ezt a lehetőséget, amivel kezelhetik a függőségüket.</p>
                 <div class="flex justify-center lg:justify-start relative mb-6">
                   <BigButtonComponent class="mt-6" to="/ajanlatkeres">Én is ajánlatot kérek</BigButtonComponent>
                 </div>
