@@ -14,7 +14,7 @@
         <NuxtLink to="/" class="nav-link" active-class="active-link">Főoldal</NuxtLink>
         <NuxtLink to="/referenciak" class="nav-link translation duration-200" active-class="active-link">Referenciák</NuxtLink>
         <NuxtLink to="/blog" class="nav-link translation duration-200" active-class="active-link">Blog</NuxtLink>
-        <NuxtLink to="/landing/landing" class="nav-link translation duration-200" active-class="active-link">Landing</NuxtLink>
+        <NuxtLink to="/landing/landing-oldal-keszites" class="nav-link translation duration-200" active-class="active-link">Landing</NuxtLink>
         <NuxtLink to="/ajanlatkeres" class="text-white border-transparent bg-black  px-4 py-2.5 rounded-full hover:text-gray-100 text-sm font-semibold">Ajánlatot kérek</NuxtLink>
 
       </nav>

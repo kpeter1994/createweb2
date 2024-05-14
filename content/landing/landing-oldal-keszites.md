@@ -1,7 +1,7 @@
 ---
-title: "Növeld a vállalkozásod eredményeit egy hatékony landing oldal segítségével"
-subtitle: "Egyedi weboldal készítés"
-description: "Ha hirdetéseid nem hoznak eredményt, akkor valószínűleg a landing oldalad a hibás. A lassú és sablonos oldalak akár <b>40%</b>-kal is csökkenthetik a konverziókat. A legjobban teljesítő landing oldalak kattintási aránya akár <b>126%</b>-kal is magasabb lehet, mint egy átlagosan teljesítő oldal."
+title: "Hatékony LANDING OLDAL készítés"
+subtitle: "Növeld a vállalkozásod eredményeit egy hatékony landing oldal segítségével"
+description: "Egy hatékony landing oldal elkésztése a válalkozásod sikerének a kulcsa lehet"
 ctaButton: "Ajánlatot kérek"
 date: 2024-05-08
 draft: false
@@ -10,7 +10,7 @@ ogImage:
   props:
     image: image/blog/meta-tag-seo/thumbnail.jpg
     readingMins: 5
-slug: "landing"
+slug: "landing-oldal-keszites"
 sections:
   first:
     title: "Miért nem működnek a hagyományos WordPress oldalak?"
@@ -50,7 +50,7 @@ sections:
     title: "Hogyan tudunk együtt dolgozni?"
     contents: [
   
-    "Miután kitöltötted a kapcsolatfelvételi űrlapot 24 órán belül felveszem veled a kapcsolatot és egyeztetünk egy online vagy egy személyes időpontot, ahol feltérképezem az igényeidet és a célcsoportodat, hogy pontosan milyen landing oldalra is lenne szükséged, ahhoz, hogy elérjük azokat az eredményeket, amiket célként kitűztünk a vállalkozásodnak."
+    "Miután kitöltötted a kapcsolatfelvételi űrlapot 24 órán belül felveszem veled a kapcsolatot és egyeztetünk egy online vagy egy személyes időpontot, ahol feltérképezem az igényeidet és a célcsoportodat, hogy pontosan milyen landing oldal elkészítésére lenne szükséged, ahhoz, hogy elérjük azokat az eredményeket, amiket célként kitűztél a vállalkozásodnak."
   ]
 ---
 
