@@ -146,7 +146,7 @@ const testimonials = ref([
   </div>
 </template>
 
-<style scoped>
+<style>
 .slider-track{
   animation: scroll 30s linear infinite;
 }
@@ -159,4 +159,6 @@ const testimonials = ref([
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
 }
+
+
 </style>
