@@ -295,7 +295,9 @@ useHead({
               class="font-semibold font-serif text-3xl lg:text-4xl">Ügyfeleim véleménye</h2>
 
         </div>
-        <SlideComponenet/>
+        <client-only>
+          <SlideComponenet/>
+        </client-only>
       </section>
 
 
