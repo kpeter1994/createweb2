@@ -2,9 +2,13 @@
 
 import {Vue3Lottie} from "vue3-lottie";
 import Arrow from "assets/animation/arrow.json";
+import BigButtonComponent from "~/components/BigButtonComponent.vue";
+import Man from "assets/animation/man.json";
+import Guarantee from "assets/animation/100Guarantee.json";
+import Ads from "assets/animation/ads.json";
 
 useHead({
-  title: 'Egyedi Céges Weboldal készítés | Createweb',
+  title: 'Weboldal készítés garanciával| Createweb',
   htmlAttrs: {
     lang: 'hu',
   },
@@ -39,20 +43,10 @@ useHead({
 
             <div class="lg:w-6/12 xl:1/3 ">
               <div class="max-w-2xl mx-auto flex flex-col gap-3 lg:pb-12">
-                <h1 class="font-bold text-amber-500">Egyedi céges webolal készítés</h1>
-                <span class="text-center text-4xl xl:text-5xl font-serif lg:text-left md:text-5xl 2xl:text-6xl font-extrabold">A vevőid megérdemlik, hogy megismerjék a vállalkozásod nagyszerőségét</span>
-                <h1 class="text-center lg:text-left xl:text-lg">Ha nem szeretnéd magad a szerencsére bízni, a akkor neked
-                  is
-                  egy olyan weboldalra van szükséged ami kiszámíthatóságot hoz a vállalkozásod mindennapjaiba. Ne
-                  kockáztass! Kérj ajánlatot!</h1>
+                <h1 class="text-center text-4xl xl:text-7xl font-serif lg:text-left md:text-6xl 2xl:text-[80px] font-extrabold">Weboldal készítés garanciával</h1>
+                <span class="text-center lg:text-left xl:text-lg mt-3">Ne bízd a szerencsére vállalkozásod sikerét! Válassz garanciával biztosított, megbízható weboldalt. Kérj ajánlatot most, és élvezd a stabilitást!</span>
                 <div class="flex justify-center lg:justify-start relative">
                   <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
-                  <Vue3Lottie
-                          class="absolute -top-10 right-60 pointer-events-none scale-x-[-1] translate-x-12 md:translate-x-0 lg:scale-x-[1] lg:translate-x-0"
-                          :animation-data="Arrow"
-                          :height="200"
-                          :width="300"
-                      />
 
                 </div>
               </div>
@@ -68,60 +62,31 @@ useHead({
 
       </section>
 
-      <section id="assets" class="bg-black py-20 rounded-[2rem] text-white">
-        <div class="max-w-7xl mx-auto px-6 flex gap-6 items-center mb-6">
-          <h2 class="font-serif font-semibold">Technológiák</h2>
-          <div class="w-full h-[1px] bg-white bg-opacity-10"></div>
-        </div>
-        <ul class="max-w-7xl mx-auto px-6 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/laravel.svg" title="laravel" alt="laravel">
-            <span class="lg:text-lg font-bold">Laravel</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/vuejs.svg" title="vuejs" alt="vuejs">
-            <span class="lg:text-lg font-bold">Vue</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/nuxt.svg" title="nuxt" alt="nuxt">
-            <span class="lg:text-lg font-bold">Nuxt</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/tailwind.svg" title="openai" alt="openai">
-            <span class="lg:text-lg font-bold">Tailwind</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/bootstrap.svg" title="Bootstrap" alt="Bootstrap">
-            <span class="lg:text-lg font-bold">Bootstrap</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/figma.svg" title="figma" alt="figma">
-            <span class="lg:text-lg font-bold">Figma</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/analytics.svg" title="analytics" alt="analytics">
-            <span class="lg:text-lg font-bold">Analytics</span>
-          </li>
-          <li class="flex items-center gap-1.5">
-            <img class="w-8 lg:w-12" src="/image/talent/openai.svg" title="openai" alt="openai">
-            <span class="lg:text-lg font-bold">OpenAI</span>
-          </li>
-
-
-        </ul>
-
-      </section>
+      <AssetsComponent/>
 
       <section id="method" class="py-20 lg:py-40 bg-white overflow-hidden">
-        <div v-animateonscroll="{ enterClass: 'animate-fade-left animate-ease-out' }" class="container mx-auto px-3 flex flex-col lg:flex-row gap-6 transition-all ">
+        <div class="container mx-auto px-3 flex flex-col lg:flex-row gap-6 transition-all ">
+
+          <div class="lg:w-1/2">
+            <client-only>
+              <div class="flex">
+                <Vue3Lottie
+                    :animation-data="Ads"
+                    :width="500"
+                />
+              </div>
+
+            </client-only>
+          </div>
           <div class="lg:w-1/2">
             <div class="max-w-2xl mb-20">
-              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">Szeretnéd, ha többé nem kellene aggódnod az ügyfélszerzés miatt?</p>
+              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">A vásárlóidnak joguk van megismerni a céged nagyszerűségét</p>
               <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
-                Az ügyfélszerzés már nem jelent nehézséget, ha vállalkozásod stratégiai marketing szemléletre épül. A gyors és hirtelen ügyfélszerzés helyett átgondoltabb, egymásra épülő marketingeszközöket alkalmazva elérhetjük, hogy az üzleti növekedésed egy stabil és fenntartható mederbe terelődjön, így segítve elérni üzleti céljaidat.
+                A vállalkozásod egyedi története és értékei különlegessé teszik, amit fontos, hogy vevőid is megismerjenek. A weboldalad az elsődleges platform, ahol bemutathatod kiváló termékeidet, rendkívüli szolgáltatásaidat és hiteles szakértelmedet. Egy jól megtervezett, <strong>garanciával biztosított weboldal</strong> nemcsak informál, hanem inspirál és bizalmat épít.
               </p>
               <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
-                Egy ügyféleszerző folyamat kiépítése időigényes feladat lehet, viszont hosszútávon olyan előnyöket jelent, amivel nem képes versenyezni az a konkurensed, akinek a marketing eszköztára kimerül a fizetett hirdetéseknél.
+                A digitális világban az első benyomás döntő fontosságú. Egy professzionális weboldal segít kiemelkedni a versenytársak közül és hitelességet sugároz. Mutasd be sikereidet, elégedett ügyfelek visszajelzéseit és vállalkozásod értékeit, hogy a vevőid megértsék és értékeljék a munkádat, és már az első pillanattól kezdve elnyerd a bizalmukat.
+
               </p>
 
               <div class="flex justify-center lg:justify-start relative mt-6">
@@ -130,62 +95,199 @@ useHead({
               </div>
             </div>
           </div>
-          <div class="lg:w-1/2">
-            <img class="w-full" src="/image/marketing.svg" alt="céges webolal készítés">
-          </div>
 
         </div>
 
       </section>
+
+
 
       <section id="services" class="bg-neutral-50 py-20 lg:py-40 px-3">
         <div class="max-w-2xl mx-auto text-center">
 
           <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
               class="font-semibold font-serif text-3xl lg:text-4xl">
-            Hogyan tudok neked segíteni?
+            Miben tudok neked segíteni?
           </h2>
 
           <p class="text-lg mt-6 text-neutral-600">
-            Felfedezzük vállalkozásod piacát és konkurenseit, hogy közösen megtervezzük a legmegfelelőbb marketing- és weboldal stratégiát, majd lépésről lépésre építjük fel webes jelenlétedet a célközönség hatékony eléréséért. Rendszeres ellenőrzésekkel és finomhangolással biztosítjuk, hogy marketingtevékenységed folyamatosan fejlődjön és eredményeket hozzon.
+            Landing page, céges weboldal, weboldal felújítás, referenciaoldal vagy webáruház készítésében, hogy online jelenléted professzionális és vonzó legyen.
           </p>
-
 
 
         </div>
         <div class="max-w-7xl mx-auto flex justify-center mt-16 flex-wrap">
           <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-duration-[1000ms]' }"
-                                 image="ph_user-focus.svg" title="Marketingterv készítés"
-                                 description="Együtt átvizsgáljuk azt a területet, ahol vállalkozásod tevékenykedik, megvizsgáljuk a versenytársakat, kitűzünk egy közös célt, és megtervezzük azokat a lépéseket, valamint kiválasztjuk azokat a marketingeszközöket, amelyekkel ez a cél elérhető"/>
+                                 image="icon-park-solid_landing.svg" title="Landing page készítés"
+                                 description="Érje el célját gyorsan és hatékonyan egy jól megtervezett landing page segítségével."/>
+
           <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
-                                 image="fluent-mdl2_design.svg" title="Weboldal tervezés"
-                                 description="Az elkészült marketingterv alapján elkészítem számodra azt a weboldaltervet, amely segítségével a leghatékonyabban tudod megszólítani potenciális ügyfeleidet, és amellyel felveheted a versenyt konkurenseiddel."/>
+                                 image="fluent-mdl2_website.svg" title="Céges weboldal készítés"
+                                 description="Mutassa be vállalkozását professzionálisan és vonzóan egy modern céges weboldalon."/>
+
           <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[400ms] animate-duration-[1000ms]' }"
-                                 image="material-symbols_developer-mode-tv-outline.svg" title="Weboldal készítés"
-                                 description="Ha a terv elnyerte tetszésedet, akkor a legmodernebb webes eszközök segítségével elkészítem számodra azt a gyors, mobilbarát és keresőoptimalizált weboldalt, amely jó eséllyel maga mögé utasítja konkurenseid lomha WordPress oldalait."/>
+                                 image="fluent-mdl2_design.svg" title="Weboldal felújítás"
+                                 description="Frissítse meglévő weboldalát, hogy az megfeleljen a legújabb trendeknek."/>
+
           <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
-                                 image="nimbus_marketing.svg" title="Tartalommarketing létrehozása"
-                                 description="Miután elkészült a weboldalad, már csak el kell juttatnunk ajánlatodat a jövendőbeli ügyfeleidnek. A marketingterv alapján elkészítjük azokat a tartalmakat, amelyek értéket képviselnek a potenciális ügyfeleid számára, ezzel téve őket potenciálisból rendszeres ügyfelekké."/>
+                                 image="gg_website.svg" title="Referenciaoldal készítés"
+                                 description="Tüntesse fel legjobb munkáit egy áttekinthető és vonzó referenciaoldalon."/>
+
           <ServiceCardComponenet v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[400ms] animate-duration-[1000ms]' }"
-                                 image="gala_search.svg" title="Ellenőrzés és tökéletesítés"
-                                 description="Nem ígérhetem meg neked, hogy azonnal megtaláljuk azt a varázslatos megoldást, amely rögtön a legtöbb ügyfelet hozza el neked, de megígérhetem, hogy minden lépést mérni fogunk, így láthatóvá válik, mely irányokban érdemes tovább terjeszkednünk, hogy a lehető legjobb marketing eredményt érjünk el."/>
+                                 image="icon-park-solid_shopping.svg" title="Webáruház készítés"
+                                 description="Növelje online eladásait egy felhasználóbarát és biztonságos webáruházzal."/>
 
         </div>
       </section>
 
-      <section id="quote" class="bg-white bg-grid2 bg-cover bg-center py-20 lg:py-40 px-3">
-        <div class="max-w-4xl mx-auto">
-          <p v-animateonscroll="{ enterClass: 'animate-fade animate-once animate-ease-out animate-delay-[100ms] animate-duration-[1000ms]' }" class="font-serif font-semibold  text-3xl lg:text-4xl text-neutral-800">Az őrültség nem más, mint ugyanazt
-            tenni újra és újra, és várni, hogy az eredmény más legyen.</p>
-          <div class="flex justify-end ">
-            <div v-animateonscroll="{ enterClass: 'animate-fade animate-once animate-ease-out animate-delay-[1000ms] animate-duration-[1000ms]' }" class="flex flex-col items-center">
-              <img class="w-14" src="/image/rita-mae-brown.png" alt="Rita Mae Brown">
-              <span class="text-neutral-500 text-sm">Rita Mae Brown</span>
+
+      <section id="method" class="py-20 lg:py-40 bg-white overflow-hidden">
+        <div class="container mx-auto px-3 flex flex-col lg:flex-row gap-6 transition-all ">
+
+          <div class="lg:w-1/2">
+            <client-only>
+              <div class="flex">
+                <Vue3Lottie
+                    :animation-data="Man"
+                    :width="500"
+                />
+              </div>
+
+            </client-only>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="max-w-2xl mb-20">
+              <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }"
+                 class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">Egy hatékony weboldal jellemzői</h2>
+              <ul class="mt-6 text-xl space-y-3">
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Személyre szabott:</strong> Egyedi igényekre szabva</li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Responszív:</strong> Minden eszközön tökéletes megjelenés</li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>SEO optimalizált:</strong> Jobb láthatóság a keresőmotorokban</li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Modern design:</strong> Letisztult és vonzó megjelenés</li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Átlátható:</strong> Könnyen navigálható</li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Gyors</strong>: Gyors betöltési idő a jobb felhasználói élményért</li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Felhasználóbarát:</strong> Intuitív felhasználói élmény </li>
+                <li><i class="pi pi-arrow-right mr-1.5 opacity-60"></i><strong>Beépített weboldal analitika:</strong> Teljesítmény nyomon követése és elemzése</li>
+
+              </ul>
+
+              <div class="flex justify-center lg:justify-start relative mt-6">
+                <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section id="guarantee" class="py-20 lg:py-40 bg-amber-50 relative">
+        <img class="w-full absolute left-0 right-0 top-0" src="/image/trap.svg" alt="weboldal készítés">
+        <img class="w-full absolute bottom-0 scale-y-[-1]" src="/image/trap.svg" alt="elválsztó">
+        <div class="container mx-auto px-3 flex flex-col lg:flex-row gap-6 transition-all ">
+
+          <div class="lg:w-1/3">
+            <client-only>
+              <div class="flex">
+                <Vue3Lottie
+                    :animation-data="Guarantee"
+                    :width="500"
+                />
+              </div>
+
+            </client-only>
+          </div>
+          <div class="lg:w-1/2 flex items-center">
+            <div class="max-w-2xl mb-20">
+              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">100%-os pénzvisszafizetési garancia</p>
+              <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
+                Vállalom, hogy az általam készített weboldalak teljes mértékben megfelelnek az igényeidnek, és garantálom a minőséget. Ha nem vagy elégedett, visszafizetem a teljes összeget. Bízz bennem, és biztosítsd vállalkozásod online sikerét!
+              </p>
+
+
+              <div class="flex justify-center lg:justify-start relative mt-6">
+                <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="bg-white py-20 lg:py-40 px-3 ">
+        <div class="max-w-7xl mx-auto">
+          <div class="max-w-2xl">
+
+            <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
+                class="font-semibold font-serif text-3xl lg:text-4xl">
+              A weboldal készítés folyamata
+            </h2>
+
+            <p class="text-lg mt-6 text-neutral-600">
+              Egy professzionális weboldal az online siker alapja. Célom, hogy alapos kutatással, részletes tervezéssel, egyedi dizájnnal és modern fejlesztéssel olyan weboldalt hozzak létre, amely kiemelkedik a versenytársak közül. Bízd rám a weboldalad teljes körű kialakítását és karbantartását, hogy te csak az üzletedre koncentrálhass.
+            </p>
+
+
+          </div>
+          <div class="flex justify-center mt-16 flex-wrap">
+            <div class="md:w-1/2 lg:w-1/3 p-6"
+                 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-duration-[1000ms]' }">
+              <span class="text-5xl block font-extrabold mb-3 opacity-60">01</span>
+              <h3 class="text-2xl font-serif mb-3 border-b-2">Célmeghatározás</h3>
+              <p>
+                Meghatározzuk a weboldalad célját és célközönségét, hogy az megfelelően szolgálja az üzleti igényeidet.
+              </p>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3 p-6"
+            v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }">
+              <span class="text-5xl block font-extrabold mb-3 opacity-60">02</span>
+              <h3 class="text-2xl font-serif mb-3 border-b-2">Kutatás és Tervezés</h3>
+              <p>
+                Elvégzünk egy alapos piackutatást, és részletes tervet készítünk a weboldalad szerkezetéről, funkcióiról és dizájnjáról.
+              </p>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3 p-6"
+            v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[400ms] animate-duration-[1000ms]' }">
+              <span class="text-5xl block font-extrabold mb-3 opacity-60">03</span>
+              <h3 class="text-2xl font-serif mb-3 border-b-2"> Tartalomkészítés</h3>
+              <p>
+                Meghatározzuk a weboldalad célját és célközönségét, hogy az megfelelően szolgálja az üzleti igényeidet.
+              </p>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3 p-6"
+            v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-duration-[1000ms]' }">
+              <span class="text-5xl block font-extrabold mb-3 opacity-60">04</span>
+              <h3 class="text-2xl font-serif mb-3 border-b-2">Design és Fejlesztés</h3>
+              <p>
+                Megtervezzük a letisztult, felhasználóbarát dizájnt, majd fejlesztjük a weboldalt modern technológiák alkalmazásával.
+              </p>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3 p-6"
+            v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[400ms] animate-duration-[1000ms]' }">
+              <span class="text-5xl block font-extrabold mb-3 opacity-60">05</span>
+              <h3 class="text-2xl font-serif mb-3 border-b-2">Tesztelés és Finomítás</h3>
+              <p>
+                Teszteljük a weboldalt különböző eszközökön és böngészőkben, hogy minden hibát kijavítsunk és biztosítsuk a gördülékeny működést.
+              </p>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3 p-6"
+            v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[600ms] animate-duration-[1000ms]' }">
+              <span class="text-5xl block font-extrabold mb-3 opacity-60">06</span>
+              <h3 class="text-2xl font-serif mb-3 border-b-2">Indítás és Karbantartás</h3>
+              <p>
+                Elindítjuk a weboldalt, majd rendszeresen frissítjük és karbantartjuk, hogy hosszú távon is hatékonyan működjön.
+              </p>
             </div>
 
           </div>
         </div>
+
       </section>
+
 
       <section id="testimonial" class="bg-gray-50 py-20 lg:py-40 px-3">
         <div class="max-w-2xl mx-auto text-center">
@@ -195,6 +297,7 @@ useHead({
         </div>
         <SlideComponenet/>
       </section>
+
 
       <section id="references" class="bg-neutral-100 bg-center ">
         <div class="flex flex-col lg:flex-row relative">
@@ -221,7 +324,7 @@ useHead({
       <section class="bg-white py-20 lg:py-40">
         <div class="max-w-7xl mx-auto">
           <div class="mx-3">
-            <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }"
+            <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out lg:animate-delay-[400ms] animate-duration-[1000ms]' }"
                 class="font-semibold font-serif text-3xl lg:text-4xl">Blog</h2>
           </div>
 

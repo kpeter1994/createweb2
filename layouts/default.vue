@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-const open = ref(false);
 import ScrollTop from 'primevue/scrolltop';
-
 import ProgressSpinner from 'primevue/progressspinner';
 
+const open = ref(false);
 const isLoaded = ref(false);
-
 const {
   cookiesEnabled,
   cookiesEnabledIds,
@@ -14,7 +12,7 @@ const {
   moduleOptions,
 } = useCookieControl()
 
-// example: react to a cookie being accepted
+
 watch(
     () => cookiesEnabledIds.value,
     (current, previous) => {
@@ -50,7 +48,7 @@ onMounted(() => {
           <span :class="open ? 'text-white' : 'text-neutral-900' " class="font-semibold text-lg">Createweb</span>
         </NuxtLink>
         <button :class="open ? 'text-white' : 'text-neutral-900' " @click="open = !open">
-          <i class="pi pi-times text-lg"></i>
+          <i class="pi  text-lg" :class="open ? 'pi-times' : 'pi-bars' "></i>
         </button>
       </div>
 
@@ -64,10 +62,23 @@ onMounted(() => {
         </li>
         <li>
           <NuxtLink @click="open = !open"
+                    class="hover:bg-neutral-800 font-serif py-6 px-6 block border-b border-neutral-500 border-opacity-50"
+                    to="/weboldal-keszites-arak">Árak
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink @click="open = !open"
+                    class="hover:bg-neutral-800 font-serif py-6 px-6 block border-b border-neutral-500 border-opacity-50"
+                    to="/referenciak">Referenciák
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink @click="open = !open"
               class="hover:bg-neutral-800 font-serif py-6 px-6 block border-b border-neutral-500 border-opacity-50"
               to="/blog">Blog
           </NuxtLink>
         </li>
+
         <li>
           <NuxtLink @click="open = !open" class="hover:bg-neutral-800 font-serif py-6 px-6 block" to="/ajanlatkeres">Kapcsolat</NuxtLink>
         </li>

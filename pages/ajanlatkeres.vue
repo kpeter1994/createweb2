@@ -12,7 +12,7 @@
             <div class="max-w-2xl mt-12">
               <span class="block font-serif">Kapcsolat</span>
               <h1 class="font-serif text-5xl text-neutral-950 mt-4 mb-3">Vedd fel velem a kapcsolatot!</h1>
-              <p class="text-lg">Kérj egyszerű, vagy részletes ajánlatot!</p>
+              <p class="text-lg">Kérj ajánlatot az űrlap kitöltésével, vagy vedd fel velem a kapcsolatot az itt található elérhetőségek valamelyikén!</p>
 
             </div>
           </div>

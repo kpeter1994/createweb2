@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import Man from "assets/animation/man.json";
+import Guarantee from "assets/animation/Guarantee.json";
 
 const Time = () => {
   const options: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
@@ -25,7 +25,7 @@ const Time = () => {
           <client-only>
             <div class="flex w-full justify-center">
               <Vue3Lottie
-                  :animation-data="Man"
+                  :animation-data="Guarantee"
                   :width="230"
               />
             </div>

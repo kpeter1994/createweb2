@@ -12,6 +12,7 @@
       </NuxtLink>
       <nav class="gap-3 items-center hidden lg:flex font-semibold">
         <NuxtLink to="/" class="nav-link" active-class="active-link">Főoldal</NuxtLink>
+        <NuxtLink to="/weboldal-keszites-arak" class="nav-link" active-class="active-link">Árak</NuxtLink>
         <NuxtLink to="/referenciak" class="nav-link translation duration-200" active-class="active-link">Referenciák</NuxtLink>
         <NuxtLink to="/blog" class="nav-link translation duration-200" active-class="active-link">Blog</NuxtLink>
         <NuxtLink to="/landing/landing-oldal-keszites" class="nav-link translation duration-200" active-class="active-link">Landing</NuxtLink>

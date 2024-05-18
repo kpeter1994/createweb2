@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Man from '@/assets/animation/man.json'
+import Guarantee from '@/assets/animation/Guarantee.json'
 </script>
 
 <template>
@@ -15,11 +15,12 @@ import Man from '@/assets/animation/man.json'
 <!--          </div>-->
 <!--        </div>-->
         <client-only>
-          <div class="flex scale-x-[-1]">
+          <div class="flex">
             <Vue3Lottie
-                :animation-data="Man"
+                :animation-data="Guarantee"
                 :height="300"
                 :width="300"
+                :loop="false"
             />
           </div>
 
