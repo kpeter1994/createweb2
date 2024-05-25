@@ -6,9 +6,10 @@ import BigButtonComponent from "~/components/BigButtonComponent.vue";
 import Man from "assets/animation/man.json";
 import Guarantee from "assets/animation/100Guarantee.json";
 import Ads from "assets/animation/ads.json";
+import LaptopSliderComponent from "~/components/LaptopSliderComponent.vue";
 
 useHead({
-  title: 'Weboldal készítés garanciával| Createweb',
+  title: 'Weboldal készítés Kecskemét| Createweb',
   htmlAttrs: {
     lang: 'hu',
   },
@@ -36,14 +37,26 @@ useHead({
     <main>
       <section id="hero" class="bg-white bg-grid bg-contain lg:bg-cover overflow-hidden rounded-t-[2rem]">
         <div class="bg-gradient-to-l from-transparent to-white">
-          <NavComponent/>
+          <div class="h-12 lg:hidden"></div>
+          <header class="hidden lg:block py-12 px-3">
+            <div class="max-w-7xl 2xl:max-w-[95%] mx-auto flex justify-between">
+              <NuxtLink to="/" class="flex gap-1.5 items-center">
+                <img width="35px" src="../../assets/image/logo.svg" alt="createweb.hu">
+                <span class="font-semibold text-lg">Createweb</span>
+              </NuxtLink>
+              <nav class="gap-3 items-center hidden lg:flex font-semibold">
+                <NuxtLink to="/ajanlatkeres" class="text-white border-transparent bg-black  px-4 py-2.5 rounded-full hover:text-gray-100 text-sm font-semibold">Ajánlatot kérek</NuxtLink>
+              </nav>
+            </div>
+
+          </header>
 
 
           <div class="max-w-7xl 2xl:max-w-[95%] mx-auto flex flex-col lg:flex-row px-3 pt-6 lg:pt-20">
 
             <div class="lg:w-6/12 xl:1/3 ">
               <div class="max-w-2xl mx-auto flex flex-col gap-3 lg:pb-12">
-                <h1 class="text-center text-4xl xl:text-7xl font-serif lg:text-left md:text-6xl 2xl:text-[80px] font-extrabold">Weboldal készítés garanciával</h1>
+                <h1 class="text-center text-4xl xl:text-7xl font-serif lg:text-left md:text-6xl 2xl:text-[80px] font-extrabold">Weboldal készítés Kecskemét</h1>
                 <span class="text-center lg:text-left xl:text-lg mt-3">Ne bízd a szerencsére vállalkozásod sikerét! Válassz garanciával biztosított, megbízható weboldalt. Kérj ajánlatot most, és élvezd a stabilitást!</span>
                 <div class="flex justify-center lg:justify-start relative">
                   <ButtonComponent to="/ajanlatkeres">Ajánlatot kérek</ButtonComponent>
@@ -53,7 +66,7 @@ useHead({
             </div>
             <div class="lg:w-6/12 xl:2/3 px-6 pt-6 lg:p-0 ">
               <HeroMobilComponent class="lg:hidden"></HeroMobilComponent>
-              <HeroLaptopComponent class="hidden lg:block"></HeroLaptopComponent>
+              <LaptopSliderComponent class="hidden lg:block"></LaptopSliderComponent>
             </div>
 
           </div>
@@ -80,9 +93,9 @@ useHead({
           </div>
           <div class="lg:w-1/2">
             <div class="max-w-2xl mb-20">
-              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-3xl lg:text-5xl text-center lg:text-left">A vásárlóidnak joguk van megismerni a céged nagyszerűségét</p>
+              <p v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[300ms] animate-duration-[600ms]' }" class="font-semibold font-serif text-4xl lg:text-6xl text-center lg:text-left">A vásárlóidnak joguk van megismerni a vállalkozásod értékeit</p>
               <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
-                A vállalkozásod egyedi története és értékei különlegessé teszik, amit fontos, hogy vevőid is megismerjenek. A weboldalad az elsődleges platform, ahol bemutathatod kiváló termékeidet, rendkívüli szolgáltatásaidat és hiteles szakértelmedet. Egy jól megtervezett, <strong>garanciával biztosított weboldal</strong> nemcsak informál, hanem inspirál és bizalmat épít.
+                A weboldalad az elsődleges platform, ahol bemutathatod kiváló termékeidet, rendkívüli szolgáltatásaidat és hiteles szakértelmedet. Egy jól megtervezett, <strong>garanciával biztosított weboldal</strong> nemcsak informál, hanem inspirál és bizalmat is épít.
               </p>
               <p class="mt-6 text-lg text-neutral-600 text-center lg:text-left">
                 A digitális világban az első benyomás döntő fontosságú. Egy professzionális weboldal segít kiemelkedni a versenytársak közül és hitelességet sugároz. Mutasd be sikereidet, elégedett ügyfelek visszajelzéseit és vállalkozásod értékeit, hogy a vevőid megértsék és értékeljék a munkádat, és már az első pillanattól kezdve elnyerd a bizalmukat.
@@ -386,39 +399,7 @@ useHead({
       </section>
 
 
-      <section id="references" class="bg-neutral-100 bg-center ">
-        <div class="flex flex-col lg:flex-row relative">
-          <div class="lg:w-1/2 order-2 lg:order-1">
-            <NuxtImg src="/image/references.png" sizes="xs:480px sm:768px md:1024px lg:860px xl:960px" alt="references"
-                     class="w-full h-full object-cover"></NuxtImg>
-          </div>
-          <div
-              class="w-full py-32 lg:absolute lg:w-2/3 h-full right-0 top-0 bottom-0  order-1 lg:order-2 flex items-center bg-brush bg-cover bg-center lg:bg-left bg-no-repeat">
-            <div class="max-w-2xl mx-auto flex flex-col h-full justify-center px-3 relative text-white">
-              <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out animate-delay-[200ms] animate-duration-[1000ms]' }" class="font-semibold font-serif text-3xl lg:text-4xl text-center lg:text-left">Referenciák</h2>
-              <div class="mt-6 flex justify-center">
-                <NuxtLink to="/referenciak"
-                          class="bg-white text-black px-3 py-2.5 rounded-full inline-flex hover:text-gray-900 text-sm font-semibold">
-                  Megnézem a referenciákat
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </section>
-
-      <section class="bg-white py-20 lg:py-40">
-        <div class="max-w-7xl mx-auto">
-          <div class="mx-3">
-            <h2 v-animateonscroll="{ enterClass: 'animate-fade-up animate-once animate-ease-out lg:animate-delay-[400ms] animate-duration-[1000ms]' }"
-                class="font-semibold font-serif text-3xl lg:text-4xl">Blog</h2>
-          </div>
-
-          <BlogListComponent class="mt-12"/>
-
-        </div>
-      </section>
     </main>
   </Transition>
 

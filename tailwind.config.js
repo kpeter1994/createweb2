@@ -36,7 +36,7 @@ module.exports = {
         "hero": "url('/assets/image/mi-kell.svg')",
         "hero-m": "url('/assets/image/mi-kell-m.svg')",
         "brush": "url('/assets/image/brush.svg')",
-        "galaxy": "url('/public/image/galaxy.jpg')",
+
       },
 
     },

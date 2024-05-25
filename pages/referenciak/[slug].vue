@@ -77,7 +77,7 @@ const {slug} = useRoute().params
 
             </div>
             <div class="lg:w-1/2 mb-8">
-              <div class="rounded-[2rem] shadow-2xl overflow-hidden min-h-[1500px]">
+              <div class="rounded-[2rem] shadow-2xl overflow-hidden">
                 <NuxtImg class="w-full" :src="doc.fullImage" format="webp"
                          sizes="xs: 476px sm: 645px md: 1256px lg:1256px" alt="Referenciák"/>
               </div>
